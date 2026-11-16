@@ -43,7 +43,7 @@
     },
     {
       "name": "glaad-placeholder.png",
-      "bytes": 16696
+      "bytes": 16697
     },
     {
       "name": "glaad-thumbnail-body-copy.png",
@@ -141,35 +141,35 @@
     },
     {
       "name": "example-news-update.html",
-      "bytes": 61196
+      "bytes": 61336
     },
     {
       "name": "example-news-update.mjml",
-      "bytes": 15813
+      "bytes": 15953
     },
     {
       "name": "example-welcome.html",
-      "bytes": 48305
+      "bytes": 48445
     },
     {
       "name": "example-welcome.mjml",
-      "bytes": 14103
+      "bytes": 14243
     },
     {
       "name": "example-year-end-appeal.html",
-      "bytes": 68666
+      "bytes": 68806
     },
     {
       "name": "example-year-end-appeal.mjml",
-      "bytes": 18993
+      "bytes": 19133
     },
     {
       "name": "main.html",
-      "bytes": 87593
+      "bytes": 87733
     },
     {
       "name": "main.mjml",
-      "bytes": 23012
+      "bytes": 23152
     },
     {
       "name": "styles.css",
@@ -179,35 +179,35 @@
   "en": [
     {
       "name": "en-blocks-import.json",
-      "bytes": 273617
+      "bytes": 284395
     },
     {
       "name": "en-template-import.json",
-      "bytes": 5832
+      "bytes": 5999
     },
     {
       "name": "example-news-update.html",
-      "bytes": 62087
+      "bytes": 62227
     },
     {
       "name": "example-news-update.mjml",
-      "bytes": 16704
+      "bytes": 16844
     },
     {
       "name": "example-welcome.html",
-      "bytes": 49034
+      "bytes": 49174
     },
     {
       "name": "example-welcome.mjml",
-      "bytes": 14832
+      "bytes": 14972
     },
     {
       "name": "example-year-end-appeal.html",
-      "bytes": 69395
+      "bytes": 69535
     },
     {
       "name": "example-year-end-appeal.mjml",
-      "bytes": 19722
+      "bytes": 19862
     },
     {
       "name": "export-manifest.json",
@@ -215,11 +215,11 @@
     },
     {
       "name": "main.html",
-      "bytes": 88565
+      "bytes": 88705
     },
     {
       "name": "main.mjml",
-      "bytes": 23984
+      "bytes": 24124
     },
     {
       "name": "styles.css",

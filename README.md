@@ -188,8 +188,10 @@ Declared in the `en-tools-config` comment at the top of `src/main.mjml`.
 - **Brand colors**: Cyan `#00B2E3`, Light Cyan `#5DCBEB`, Azure `#008DD0`,
   Blue `#105BAB`, Navy `#0B4280` (sampled from the logo), plus CTA Blue
   `#0313C4` (the live email's own Outlook button rule), Near Black `#111111`,
-  Charcoal `#454545` and Light Gray `#DEDEDE` from the live email.
-  The names are ours; swap in GLAAD's brand-guide names if they have them.
+  Charcoal `#454545` and Light Gray `#DEDEDE` from the live email, and
+  Alt Cyan `#00AFDF`, Red `#FF3131` and Light Red `#FF7272` (added
+  2026-11-16). The names are ours; swap in GLAAD's brand-guide names if
+  they have them.
 
 | Style | Size | Line-height |
 | :-- | :-- | :-- |

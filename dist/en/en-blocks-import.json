@@ -1,8 +1,8 @@
 [
   {
     "clientId": 10109,
-    "createdOn": 1794858657902,
-    "modifiedOn": 1794858657902,
+    "createdOn": 1794866955947,
+    "modifiedOn": 1794866955947,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Utility — Template Styles",
@@ -12,12 +12,12 @@
     "data": {
       "replacements": {}
     },
-    "exportId": 667902
+    "exportId": 965947
   },
   {
     "clientId": 10109,
-    "createdOn": 1794858657902,
-    "modifiedOn": 1794858657902,
+    "createdOn": 1794866955947,
+    "modifiedOn": 1794866955947,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Logo Header",
@@ -39,10 +39,6 @@
           "section": "Logo Header",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -55,12 +51,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -265,10 +277,6 @@
           "section": "Bottom Spacer",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -281,12 +289,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -346,12 +370,12 @@
         }
       }
     },
-    "exportId": 667903
+    "exportId": 965948
   },
   {
     "clientId": 10109,
-    "createdOn": 1794858657902,
-    "modifiedOn": 1794858657902,
+    "createdOn": 1794866955947,
+    "modifiedOn": 1794866955947,
     "ownedBy": 0,
     "folderId": 0,
     "name": "CTA Header",
@@ -373,10 +397,6 @@
           "section": "CTA Header",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -389,12 +409,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -727,10 +763,6 @@
           "section": "Button",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#000000",
               "label": "Black - #000000"
             },
@@ -747,12 +779,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -785,10 +833,6 @@
           "section": "Button",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4 (default)"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -801,12 +845,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4 (default)"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -895,10 +955,6 @@
           "section": "Bottom Spacer",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -911,12 +967,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -976,12 +1048,12 @@
         }
       }
     },
-    "exportId": 667904
+    "exportId": 965949
   },
   {
     "clientId": 10109,
-    "createdOn": 1794858657902,
-    "modifiedOn": 1794858657902,
+    "createdOn": 1794866955947,
+    "modifiedOn": 1794866955947,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Match Banner",
@@ -1003,10 +1075,6 @@
           "section": "Match Banner",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -1019,12 +1087,28 @@
               "label": "Navy - #0b4280 (default)"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -1183,10 +1267,6 @@
           "section": "Text",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#000000",
               "label": "Black - #000000"
             },
@@ -1203,12 +1283,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -1293,10 +1389,6 @@
           "section": "Bottom Spacer",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -1309,12 +1401,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -1374,12 +1482,12 @@
         }
       }
     },
-    "exportId": 667905
+    "exportId": 965950
   },
   {
     "clientId": 10109,
-    "createdOn": 1794858657902,
-    "modifiedOn": 1794858657902,
+    "createdOn": 1794866955947,
+    "modifiedOn": 1794866955947,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Body Copy",
@@ -1401,10 +1509,6 @@
           "section": "Body Copy",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -1417,12 +1521,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -1607,10 +1727,6 @@
           "section": "Bottom Spacer",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -1623,12 +1739,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -1688,12 +1820,12 @@
         }
       }
     },
-    "exportId": 667906
+    "exportId": 965951
   },
   {
     "clientId": 10109,
-    "createdOn": 1794858657902,
-    "modifiedOn": 1794858657902,
+    "createdOn": 1794866955947,
+    "modifiedOn": 1794866955947,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Gift Amount Buttons 4x1",
@@ -1715,10 +1847,6 @@
           "section": "Gift Amount Buttons 4x1",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -1731,12 +1859,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -1895,10 +2039,6 @@
           "section": "Column 1 Button",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#000000",
               "label": "Black - #000000"
             },
@@ -1915,12 +2055,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -1953,10 +2109,6 @@
           "section": "Column 1 Button",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4 (default)"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -1969,12 +2121,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4 (default)"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -2057,10 +2225,6 @@
           "section": "Column 2 Button",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#000000",
               "label": "Black - #000000"
             },
@@ -2077,12 +2241,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -2115,10 +2295,6 @@
           "section": "Column 2 Button",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4 (default)"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -2131,12 +2307,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4 (default)"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -2219,10 +2411,6 @@
           "section": "Column 3 Button",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#000000",
               "label": "Black - #000000"
             },
@@ -2239,12 +2427,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -2277,10 +2481,6 @@
           "section": "Column 3 Button",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4 (default)"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -2293,12 +2493,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4 (default)"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -2381,10 +2597,6 @@
           "section": "Column 4 Button",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#000000",
               "label": "Black - #000000"
             },
@@ -2401,12 +2613,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -2439,10 +2667,6 @@
           "section": "Column 4 Button",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4 (default)"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -2455,12 +2679,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4 (default)"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -2519,10 +2759,6 @@
           "section": "Bottom Spacer",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -2535,12 +2771,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -2600,12 +2852,12 @@
         }
       }
     },
-    "exportId": 667907
+    "exportId": 965952
   },
   {
     "clientId": 10109,
-    "createdOn": 1794858657902,
-    "modifiedOn": 1794858657902,
+    "createdOn": 1794866955947,
+    "modifiedOn": 1794866955947,
     "ownedBy": 0,
     "folderId": 0,
     "name": "CTA Button",
@@ -2627,10 +2879,6 @@
           "section": "CTA Button",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -2643,12 +2891,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -2781,10 +3045,6 @@
           "section": "Button",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#000000",
               "label": "Black - #000000"
             },
@@ -2801,12 +3061,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -2839,10 +3115,6 @@
           "section": "Button",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4 (default)"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -2855,12 +3127,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4 (default)"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -2961,10 +3249,6 @@
           "section": "Bottom Spacer",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -2977,12 +3261,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -3042,12 +3342,12 @@
         }
       }
     },
-    "exportId": 667908
+    "exportId": 965953
   },
   {
     "clientId": 10109,
-    "createdOn": 1794858657902,
-    "modifiedOn": 1794858657902,
+    "createdOn": 1794866955947,
+    "modifiedOn": 1794866955947,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Signature (no photo)",
@@ -3069,10 +3369,6 @@
           "section": "Signature (no photo)",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -3085,12 +3381,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -3275,10 +3587,6 @@
           "section": "Bottom Spacer",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -3291,12 +3599,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -3356,12 +3680,12 @@
         }
       }
     },
-    "exportId": 667909
+    "exportId": 965954
   },
   {
     "clientId": 10109,
-    "createdOn": 1794858657902,
-    "modifiedOn": 1794858657902,
+    "createdOn": 1794866955947,
+    "modifiedOn": 1794866955947,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Image (full width)",
@@ -3529,10 +3853,6 @@
           "section": "Bottom Spacer",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -3545,12 +3865,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -3610,12 +3946,12 @@
         }
       }
     },
-    "exportId": 667910
+    "exportId": 965955
   },
   {
     "clientId": 10109,
-    "createdOn": 1794858657902,
-    "modifiedOn": 1794858657902,
+    "createdOn": 1794866955947,
+    "modifiedOn": 1794866955947,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Image (indented)",
@@ -3637,10 +3973,6 @@
           "section": "Image (indented)",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -3653,12 +3985,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -3837,10 +4185,6 @@
           "section": "Bottom Spacer",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -3853,12 +4197,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -3918,12 +4278,12 @@
         }
       }
     },
-    "exportId": 667911
+    "exportId": 965956
   },
   {
     "clientId": 10109,
-    "createdOn": 1794858657902,
-    "modifiedOn": 1794858657902,
+    "createdOn": 1794866955947,
+    "modifiedOn": 1794866955947,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Social Links",
@@ -3945,10 +4305,6 @@
           "section": "Social Links",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -3961,12 +4317,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -4455,10 +4827,6 @@
           "section": "Bottom Spacer",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111"
             },
@@ -4471,12 +4839,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -4536,12 +4920,12 @@
         }
       }
     },
-    "exportId": 667912
+    "exportId": 965957
   },
   {
     "clientId": 10109,
-    "createdOn": 1794858657902,
-    "modifiedOn": 1794858657902,
+    "createdOn": 1794866955947,
+    "modifiedOn": 1794866955947,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Footer",
@@ -4563,10 +4947,6 @@
           "section": "Footer",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#111111",
               "label": "Near Black - #111111 (default)"
             },
@@ -4579,12 +4959,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -4743,10 +5139,6 @@
           "section": "Paragraph Copy",
           "options": [
             {
-              "value": "#0313c4",
-              "label": "CTA Blue - #0313c4"
-            },
-            {
               "value": "#000000",
               "label": "Black - #000000"
             },
@@ -4763,12 +5155,28 @@
               "label": "Navy - #0b4280"
             },
             {
+              "value": "#0313c4",
+              "label": "CTA Blue - #0313c4"
+            },
+            {
               "value": "#105bab",
               "label": "Blue - #105bab"
             },
             {
+              "value": "#ff3131",
+              "label": "Red - #ff3131"
+            },
+            {
+              "value": "#ff7272",
+              "label": "Light Red - #ff7272"
+            },
+            {
               "value": "#008dd0",
               "label": "Azure - #008dd0"
+            },
+            {
+              "value": "#00afdf",
+              "label": "Alt Cyan - #00afdf"
             },
             {
               "value": "#00b2e3",
@@ -4880,12 +5288,12 @@
         }
       }
     },
-    "exportId": 667913
+    "exportId": 965958
   },
   {
     "clientId": 10109,
-    "createdOn": 1794858657902,
-    "modifiedOn": 1794858657902,
+    "createdOn": 1794866955947,
+    "modifiedOn": 1794866955947,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Utility — RAW HTML",
@@ -4908,6 +5316,6 @@
         }
       }
     },
-    "exportId": 667914
+    "exportId": 965959
   }
 ]

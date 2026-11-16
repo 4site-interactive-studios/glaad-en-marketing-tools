@@ -1,7 +1,7 @@
 {
   "note": "Written by npm run export-en. check-sync compares sourceHash with src/ to catch stale exports.",
-  "exportedAt": "2026-11-16T19:50:58.265Z",
-  "sourceHash": "e66c69c17e5576e0",
+  "exportedAt": "2026-11-16T22:09:16.301Z",
+  "sourceHash": "f5ae11b7d62b9b0d",
   "assetRoot": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109",
   "clientId": 10109,
   "ownedBy": 0,
