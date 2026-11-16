@@ -24,6 +24,9 @@
     }
     * { box-sizing: border-box; }
     [hidden] { display: none !important; }
+    /* Demo view (no ?downloads): preview and blocks only. */
+    .demo .setup-only { display: none !important; }
+    .demo .layout { grid-template-columns: minmax(0, 1fr); }
     body {
       margin: 0;
       font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
@@ -119,13 +122,19 @@
     figcaption span { color: var(--muted); }
     footer { max-width: 1240px; margin: 40px auto 0; padding: 16px 24px 32px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
   </style>
+  <script>
+    // The page opens as a demo for GLAAD: preview and blocks only. Adding
+    // ?downloads to the URL shows the setup steps, export details and every
+    // download. Set before the body renders, so nothing flashes.
+    if (!new URLSearchParams(location.search).has('downloads')) document.documentElement.classList.add('demo');
+  </script>
 </head>
 <body>
   <header>
     <div class="wrap">
       <h1>GLAAD email template</h1>
-      <p>A draft by 4Site Studios for GLAAD's review: preview the template and its blocks, and download everything needed to set it up in Engaging Networks (EN) Marketing Tools.</p>
-      <p class="meta" id="meta">Loading export details…</p>
+      <p>A draft by 4Site Studios for GLAAD's review: preview the Engaging Networks (EN) Marketing Tools template and its blocks<span class="setup-only">, and download everything needed to set it up in EN</span>.</p>
+      <p class="meta setup-only" id="meta">Loading export details…</p>
     </div>
   </header>
 
@@ -150,7 +159,7 @@
               <button type="button" data-value="dark" aria-pressed="false">Dark</button>
             </span>
           </div>
-          <div class="control" id="images-control">Images
+          <div class="control setup-only" id="images-control">Images
             <span class="seg" data-key="images">
               <button type="button" data-value="local" aria-pressed="true">In this repo</button>
               <button type="button" data-value="en" aria-pressed="false">From EN</button>
@@ -163,7 +172,7 @@
         </div>
       </section>
 
-      <aside>
+      <aside class="setup-only">
         <section aria-labelledby="setup-h">
           <h2 id="setup-h">Set it up in EN</h2>
           <ol>
@@ -214,8 +223,8 @@
   </main>
 
   <footer>
-    Prepared by 4Site Studios. Source and full instructions:
-    <a href="https://github.com/4site-interactive-studios/glaad-en-marketing-tools">github.com/4site-interactive-studios/glaad-en-marketing-tools</a>.
+    Prepared by 4Site Studios.<span class="setup-only"> Source and full instructions:
+    <a href="https://github.com/4site-interactive-studios/glaad-en-marketing-tools">github.com/4site-interactive-studios/glaad-en-marketing-tools</a>.</span>
   </footer>
 
   <script>

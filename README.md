@@ -49,20 +49,25 @@ them with the real IDs as shown under "Keeping everything in sync".
 
 ## Preview page (GitHub Pages)
 
-`index.html` is a single page with everything on it:
+`index.html` opens as a demo for GLAAD: the preview and the blocks only.
+Add `?downloads` to the URL
+(`https://4site-interactive-studios.github.io/glaad-en-marketing-tools/?downloads`)
+for the full page with the setup steps, export details and every download:
 
 - **Preview:** three example emails built from the blocks (a year-end
   appeal, a welcome email and a news update), with an Email switch,
-  desktop/phone width, light/dark mode,
-  and images from the repo or from GLAAD's EN folder (the EN option shows
-  broken images until `upload/` is uploaded). Dark mode shows what Apple
+  desktop/phone width, light/dark mode, and (`?downloads` only) images from
+  the repo or from GLAAD's EN folder (the EN option shows broken images until
+  `upload/` is uploaded). Dark mode shows what Apple
   Mail and iOS Mail do; Gmail apps and Outlook desktop darken emails their
   own way.
 - **Blocks:** every block in the EN block import, with its thumbnail and its
   number of editable fields.
-- **Files:** the EN template and block imports, both MJML versions, both HTML
-  versions, the stylesheet, and every upload file (one at a time, or all in a
-  ZIP the page builds in the browser).
+- **Files** (`?downloads` only): the EN template and block imports, the
+  example emails as HTML with EN image paths, and every upload file (one at a
+  time, or all in a ZIP the page builds in the browser), plus a ZIP of
+  everything in `dist/` and `upload/`. The export details line under the
+  title is `?downloads` only too.
 
 The page reads `dist/files.json`, `dist/en/en-blocks-import.json` and
 `dist/en/export-manifest.json`, so it updates itself whenever the outputs are
