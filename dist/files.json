@@ -46,12 +46,48 @@
       "bytes": 16697
     },
     {
+      "name": "glaad-signature-black.png",
+      "bytes": 11202
+    },
+    {
+      "name": "glaad-signature-photo-dark.png",
+      "bytes": 5391
+    },
+    {
+      "name": "glaad-signature-photo.png",
+      "bytes": 5280
+    },
+    {
+      "name": "glaad-signature-white.png",
+      "bytes": 5619
+    },
+    {
       "name": "glaad-thumbnail-body-copy.png",
       "bytes": 116306
     },
     {
       "name": "glaad-thumbnail-cta-button.png",
       "bytes": 4877
+    },
+    {
+      "name": "glaad-thumbnail-cta-buttons-2x1-fixed-width.png",
+      "bytes": 7451
+    },
+    {
+      "name": "glaad-thumbnail-cta-buttons-2x1-two-line.png",
+      "bytes": 13772
+    },
+    {
+      "name": "glaad-thumbnail-cta-buttons-2x1.png",
+      "bytes": 7660
+    },
+    {
+      "name": "glaad-thumbnail-cta-buttons-3x1-fixed-width.png",
+      "bytes": 6400
+    },
+    {
+      "name": "glaad-thumbnail-cta-buttons-3x1.png",
+      "bytes": 8866
     },
     {
       "name": "glaad-thumbnail-cta-header.png",
@@ -88,6 +124,10 @@
     {
       "name": "glaad-thumbnail-signature-no-photo.png",
       "bytes": 12974
+    },
+    {
+      "name": "glaad-thumbnail-signature-photo.png",
+      "bytes": 23569
     },
     {
       "name": "glaad-thumbnail-social-links.png",
@@ -140,8 +180,24 @@
       "bytes": 9414
     },
     {
+      "name": "assets/glaad-signature-black.png",
+      "bytes": 11202
+    },
+    {
+      "name": "assets/glaad-signature-photo-dark.png",
+      "bytes": 5391
+    },
+    {
+      "name": "assets/glaad-signature-photo.png",
+      "bytes": 5280
+    },
+    {
+      "name": "assets/glaad-signature-white.png",
+      "bytes": 5619
+    },
+    {
       "name": "example-news-update.html",
-      "bytes": 61336
+      "bytes": 62308
     },
     {
       "name": "example-news-update.mjml",
@@ -149,45 +205,45 @@
     },
     {
       "name": "example-welcome.html",
-      "bytes": 48445
+      "bytes": 49378
     },
     {
       "name": "example-welcome.mjml",
-      "bytes": 14243
+      "bytes": 14204
     },
     {
       "name": "example-year-end-appeal.html",
-      "bytes": 68806
+      "bytes": 69739
     },
     {
       "name": "example-year-end-appeal.mjml",
-      "bytes": 19133
+      "bytes": 19094
     },
     {
       "name": "main.html",
-      "bytes": 87733
+      "bytes": 133416
     },
     {
       "name": "main.mjml",
-      "bytes": 23152
+      "bytes": 41445
     },
     {
       "name": "styles.css",
-      "bytes": 5620
+      "bytes": 6507
     }
   ],
   "en": [
     {
       "name": "en-blocks-import.json",
-      "bytes": 284395
+      "bytes": 482615
     },
     {
       "name": "en-template-import.json",
-      "bytes": 5999
+      "bytes": 5998
     },
     {
       "name": "example-news-update.html",
-      "bytes": 62227
+      "bytes": 63199
     },
     {
       "name": "example-news-update.mjml",
@@ -195,35 +251,35 @@
     },
     {
       "name": "example-welcome.html",
-      "bytes": 49174
+      "bytes": 50107
     },
     {
       "name": "example-welcome.mjml",
-      "bytes": 14972
+      "bytes": 14933
     },
     {
       "name": "example-year-end-appeal.html",
-      "bytes": 69535
+      "bytes": 70468
     },
     {
       "name": "example-year-end-appeal.mjml",
-      "bytes": 19862
+      "bytes": 19823
     },
     {
       "name": "export-manifest.json",
-      "bytes": 1263
+      "bytes": 1733
     },
     {
       "name": "main.html",
-      "bytes": 88705
+      "bytes": 134712
     },
     {
       "name": "main.mjml",
-      "bytes": 24124
+      "bytes": 42741
     },
     {
       "name": "styles.css",
-      "bytes": 5620
+      "bytes": 6507
     }
   ],
   "examples": [

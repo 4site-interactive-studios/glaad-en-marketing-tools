@@ -107,6 +107,37 @@ p {
   color: #000000;
 }
 
+/* Phones, below the 600px breakpoint (TPL styles.css, same query). */
+@media (max-width: 599px) {
+  /* CTA Buttons rows stack, centered, 10px apart: the same gap the stacked
+     Gift Amount Buttons keep. Centering overrides the row's Desktop
+     Alignment on purpose; a left-hugging button on a phone reads as a
+     layout accident (TPL). */
+  .cta-item {
+    display: block !important;
+    margin: 0 0 10px 0 !important;
+  }
+
+  .cta-item:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .cta-group {
+    text-align: center !important;
+  }
+
+  /* Signature (photo): mj-group never stacks, so its px columns are pinned
+     here, or the 540px pair would overflow a phone (guide §6e). The photo
+     column keeps its 110px; the text column takes the rest. */
+  .signature-img {
+    width: 110px !important;
+  }
+
+  .signature-text {
+    width: calc(100% - 110px) !important;
+  }
+}
+
 /* Outlook.com dark mode. Wrapped in a conditional media query because EN's
    inliner deletes top-level [data-ogsc] rules (guide §2a). */
 @media only screen and (max-width: 9999px) {

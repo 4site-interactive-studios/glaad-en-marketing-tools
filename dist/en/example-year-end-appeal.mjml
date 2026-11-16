@@ -268,8 +268,8 @@
     <!-- END: Gift Amount Buttons 4x1 -->
 
     <!-- START: Signature (no photo) -->
-    <!-- Text-only sign-off; a photo/signature-image variant can follow once
-         GLAAD supplies the art (TPL Signature Card (photo) is the model). -->
+    <!-- Text-only sign-off; Signature (photo) below is the variant with a
+         photo and a signature image. -->
     <mj-section css-class="signature-block block" background-color="#FFFFFF" padding="0 30px">
       <mj-column>
         <mj-text padding="0">

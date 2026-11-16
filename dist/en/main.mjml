@@ -300,9 +300,130 @@
     </mj-section>
     <!-- END: CTA Button -->
 
+    <!-- START: CTA Buttons 2x1 -->
+    <!-- Two content-sized buttons side by side; they stack, centered, below the
+         breakpoint (styles.css, .cta-item). Hand-authored pill markup ported
+         from TPL's CTA Buttons 2x1: inline-block items for every client, a
+         real table for Outlook desktop, which ignores inline-block. 20px
+         between buttons, as in Gift Amount Buttons 4x1. data-no-width-toggle:
+         a centered, content-sized row cannot be moved by a symmetric gutter,
+         so Block Padding Left/Right would be dead (as on CTA Button). The
+         row's Desktop Alignment field stays live. data-no-link-color (all
+         five rows): the buttons color their own labels inline and the row has
+         no rich text an editor could add a plain link to, so a Link Color
+         field could never do anything here (importer conventions.md, Link
+         Color). -->
+    <mj-section css-class="button-block block" background-color="#FFFFFF" padding="0 30px" data-no-width-toggle>
+      <mj-column>
+        <mj-text css-class="button" padding="0" data-no-link-color>
+          <!--[if mso]><table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#0313C4" style="border-radius:3px;mso-padding-alt:10px 30px;" valign="middle"><![endif]-->
+          <div class="cta-group" style="text-align:center;font-size:0;"><!--[if !mso]><!--><div class="cta-item" style="display:inline-block;vertical-align:middle;margin-right:20px;"><!--<![endif]--><!--[if mso]><div class="cta-item" style="display:inline-block;vertical-align:middle;"><![endif]--><a href="https://give.glaad.org/page/50945/donate/1?chain" style="display:inline-block;background-color:#0313C4;color:#FFFFFF;border-radius:3px;padding:10px 30px;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;font-weight:700;text-decoration:none;mso-padding-alt:0;white-space:nowrap;">DONATE NOW</a></div><!--[if mso]></td><td width="20" style="width:20px;font-size:0;line-height:0;">&nbsp;</td><td bgcolor="#0313C4" style="border-radius:3px;mso-padding-alt:10px 30px;" valign="middle"><![endif]--><div class="cta-item" style="display:inline-block;vertical-align:middle;"><a href="https://www.glaad.org/" style="display:inline-block;background-color:#0313C4;color:#FFFFFF;border-radius:3px;padding:10px 30px;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;font-weight:700;text-decoration:none;mso-padding-alt:0;white-space:nowrap;">LEARN MORE</a></div></div>
+          <!--[if mso]></td></tr></table><![endif]-->
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="spacer-block block" padding="0">
+      <mj-column>
+        <mj-spacer height="30px" container-background-color="#FFFFFF" />
+      </mj-column>
+    </mj-section>
+    <!-- END: CTA Buttons 2x1 -->
+
+    <!-- START: CTA Buttons 3x1 -->
+    <!-- Three content-sized buttons; same markup and rules as CTA Buttons 2x1.
+         Keep the labels short: all three share one 540px line on desktop
+         (each button is its label plus 60px of padding, plus 2 x 20px of
+         gaps) and wrap early if they outgrow it. TPL ships its 3x1 dynamic row
+         fully excluded as a near-duplicate of the 2x1; GLAAD ships it on
+         request (2026-11-16). -->
+    <mj-section css-class="button-block block" background-color="#FFFFFF" padding="0 30px" data-no-width-toggle>
+      <mj-column>
+        <mj-text css-class="button" padding="0" data-no-link-color>
+          <!--[if mso]><table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#0313C4" style="border-radius:3px;mso-padding-alt:10px 30px;" valign="middle"><![endif]-->
+          <div class="cta-group" style="text-align:center;font-size:0;"><!--[if !mso]><!--><div class="cta-item" style="display:inline-block;vertical-align:middle;margin-right:20px;"><!--<![endif]--><!--[if mso]><div class="cta-item" style="display:inline-block;vertical-align:middle;"><![endif]--><a href="https://give.glaad.org/page/50945/donate/1?chain" style="display:inline-block;background-color:#0313C4;color:#FFFFFF;border-radius:3px;padding:10px 30px;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;font-weight:700;text-decoration:none;mso-padding-alt:0;white-space:nowrap;">DONATE</a></div><!--[if mso]></td><td width="20" style="width:20px;font-size:0;line-height:0;">&nbsp;</td><td bgcolor="#0313C4" style="border-radius:3px;mso-padding-alt:10px 30px;" valign="middle"><![endif]--><!--[if !mso]><!--><div class="cta-item" style="display:inline-block;vertical-align:middle;margin-right:20px;"><!--<![endif]--><!--[if mso]><div class="cta-item" style="display:inline-block;vertical-align:middle;"><![endif]--><a href="https://www.glaad.org/" style="display:inline-block;background-color:#0313C4;color:#FFFFFF;border-radius:3px;padding:10px 30px;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;font-weight:700;text-decoration:none;mso-padding-alt:0;white-space:nowrap;">TAKE ACTION</a></div><!--[if mso]></td><td width="20" style="width:20px;font-size:0;line-height:0;">&nbsp;</td><td bgcolor="#0313C4" style="border-radius:3px;mso-padding-alt:10px 30px;" valign="middle"><![endif]--><div class="cta-item" style="display:inline-block;vertical-align:middle;"><a href="https://www.glaad.org/" style="display:inline-block;background-color:#0313C4;color:#FFFFFF;border-radius:3px;padding:10px 30px;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;font-weight:700;text-decoration:none;mso-padding-alt:0;white-space:nowrap;">LEARN MORE</a></div></div>
+          <!--[if mso]></td></tr></table><![endif]-->
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="spacer-block block" padding="0">
+      <mj-column>
+        <mj-spacer height="30px" container-background-color="#FFFFFF" />
+      </mj-column>
+    </mj-section>
+    <!-- END: CTA Buttons 3x1 -->
+
+    <!-- START: CTA Buttons 2x1 (fixed width) -->
+    <!-- Two equal buttons that fill the content width exactly:
+         width = (600 - 30 - 30 - (2 - 1) x 20) / 2 = 260px (TPL's shared
+         button width formula, round DOWN so they never wrap). Change the
+         gutter, gap or count and update width:260px on every <a> AND
+         width="260"/width:260px on every MSO <td>. data-no-width-toggle: a
+         wider gutter would wrap the row, a narrower one cannot move a centered
+         run. data-no-alignment-toggle: a full row has nothing to align.
+         Stacked on phones, 260px still fits a 320px screen (320 - 60). -->
+    <mj-section css-class="button-block block" background-color="#FFFFFF" padding="0 30px" data-no-width-toggle>
+      <mj-column>
+        <mj-text css-class="button" padding="0" data-no-link-color>
+          <!--[if mso]><table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#0313C4" width="260" style="width:260px;border-radius:3px;mso-padding-alt:10px 0;text-align:center;" valign="middle"><![endif]-->
+          <div class="cta-group" data-no-alignment-toggle style="text-align:center;font-size:0;"><!--[if !mso]><!--><div class="cta-item" style="display:inline-block;vertical-align:middle;margin-right:20px;"><!--<![endif]--><!--[if mso]><div class="cta-item" style="display:inline-block;vertical-align:middle;"><![endif]--><a href="https://give.glaad.org/page/50945/donate/1?chain" style="display:inline-block;background-color:#0313C4;color:#FFFFFF;border-radius:3px;width:260px;padding:10px 0;text-align:center;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;font-weight:700;text-decoration:none;mso-padding-alt:0;white-space:nowrap;">DONATE NOW</a></div><!--[if mso]></td><td width="20" style="width:20px;font-size:0;line-height:0;">&nbsp;</td><td bgcolor="#0313C4" width="260" style="width:260px;border-radius:3px;mso-padding-alt:10px 0;text-align:center;" valign="middle"><![endif]--><div class="cta-item" style="display:inline-block;vertical-align:middle;"><a href="https://www.glaad.org/" style="display:inline-block;background-color:#0313C4;color:#FFFFFF;border-radius:3px;width:260px;padding:10px 0;text-align:center;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;font-weight:700;text-decoration:none;mso-padding-alt:0;white-space:nowrap;">LEARN MORE</a></div></div>
+          <!--[if mso]></td></tr></table><![endif]-->
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="spacer-block block" padding="0">
+      <mj-column>
+        <mj-spacer height="30px" container-background-color="#FFFFFF" />
+      </mj-column>
+    </mj-section>
+    <!-- END: CTA Buttons 2x1 (fixed width) -->
+
+    <!-- START: CTA Buttons 3x1 (fixed width) -->
+    <!-- Three equal buttons: (600 - 30 - 30 - (3 - 1) x 20) / 3 = 166.67,
+         rounded DOWN to 166px (538 of the 540px content width; 1px of slack a
+         side). Same update rule and flags as the 2x1 fixed row. Amount links
+         use EN's transaction.donationAmt prefill with a RAW `&`, as on Gift
+         Amount Buttons 4x1 (see its comment). -->
+    <mj-section css-class="button-block block" background-color="#FFFFFF" padding="0 30px" data-no-width-toggle>
+      <mj-column>
+        <mj-text css-class="button" padding="0" data-no-link-color>
+          <!--[if mso]><table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#0313C4" width="166" style="width:166px;border-radius:3px;mso-padding-alt:10px 0;text-align:center;" valign="middle"><![endif]-->
+          <div class="cta-group" data-no-alignment-toggle style="text-align:center;font-size:0;"><!--[if !mso]><!--><div class="cta-item" style="display:inline-block;vertical-align:middle;margin-right:20px;"><!--<![endif]--><!--[if mso]><div class="cta-item" style="display:inline-block;vertical-align:middle;"><![endif]--><a href="https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=50" style="display:inline-block;background-color:#0313C4;color:#FFFFFF;border-radius:3px;width:166px;padding:10px 0;text-align:center;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;font-weight:700;text-decoration:none;mso-padding-alt:0;white-space:nowrap;">$50</a></div><!--[if mso]></td><td width="20" style="width:20px;font-size:0;line-height:0;">&nbsp;</td><td bgcolor="#0313C4" width="166" style="width:166px;border-radius:3px;mso-padding-alt:10px 0;text-align:center;" valign="middle"><![endif]--><!--[if !mso]><!--><div class="cta-item" style="display:inline-block;vertical-align:middle;margin-right:20px;"><!--<![endif]--><!--[if mso]><div class="cta-item" style="display:inline-block;vertical-align:middle;"><![endif]--><a href="https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=100" style="display:inline-block;background-color:#0313C4;color:#FFFFFF;border-radius:3px;width:166px;padding:10px 0;text-align:center;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;font-weight:700;text-decoration:none;mso-padding-alt:0;white-space:nowrap;">$100</a></div><!--[if mso]></td><td width="20" style="width:20px;font-size:0;line-height:0;">&nbsp;</td><td bgcolor="#0313C4" width="166" style="width:166px;border-radius:3px;mso-padding-alt:10px 0;text-align:center;" valign="middle"><![endif]--><div class="cta-item" style="display:inline-block;vertical-align:middle;"><a href="https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=250" style="display:inline-block;background-color:#0313C4;color:#FFFFFF;border-radius:3px;width:166px;padding:10px 0;text-align:center;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;font-weight:700;text-decoration:none;mso-padding-alt:0;white-space:nowrap;">$250</a></div></div>
+          <!--[if mso]></td></tr></table><![endif]-->
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="spacer-block block" padding="0">
+      <mj-column>
+        <mj-spacer height="30px" container-background-color="#FFFFFF" />
+      </mj-column>
+    </mj-section>
+    <!-- END: CTA Buttons 3x1 (fixed width) -->
+
+    <!-- START: CTA Buttons 2x1 (two-line) -->
+    <!-- Two 260px buttons with a bold first line and a regular second line,
+         CTA Blue with white labels in both modes (TPL's two-line row uses
+         colored chips with black text; GLAAD keeps its one button style). No
+         nowrap: the second line may wrap inside the button. Same width rule
+         and flags as CTA Buttons 2x1 (fixed width). -->
+    <mj-section css-class="button-block block" background-color="#FFFFFF" padding="0 30px" data-no-width-toggle>
+      <mj-column>
+        <mj-text css-class="button" padding="0" data-no-link-color>
+          <!--[if mso]><table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#0313C4" width="260" style="width:260px;border-radius:3px;mso-padding-alt:10px 0;text-align:center;" valign="middle"><![endif]-->
+          <div class="cta-group" data-no-alignment-toggle style="text-align:center;font-size:0;"><!--[if !mso]><!--><div class="cta-item" style="display:inline-block;vertical-align:middle;margin-right:20px;"><!--<![endif]--><!--[if mso]><div class="cta-item" style="display:inline-block;vertical-align:middle;"><![endif]--><a href="https://give.glaad.org/page/50945/donate/1?chain" style="display:inline-block;background-color:#0313C4;color:#FFFFFF;border-radius:3px;width:260px;padding:10px 0;text-align:center;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;text-decoration:none;mso-padding-alt:0;"><span style="font-weight:700;">DONATE NOW</span><br><span style="font-weight:400;">Your gift is matched</span></a></div><!--[if mso]></td><td width="20" style="width:20px;font-size:0;line-height:0;">&nbsp;</td><td bgcolor="#0313C4" width="260" style="width:260px;border-radius:3px;mso-padding-alt:10px 0;text-align:center;" valign="middle"><![endif]--><div class="cta-item" style="display:inline-block;vertical-align:middle;"><a href="https://www.glaad.org/" style="display:inline-block;background-color:#0313C4;color:#FFFFFF;border-radius:3px;width:260px;padding:10px 0;text-align:center;font-family:Arial, Helvetica, sans-serif;font-size:16px;line-height:20px;text-decoration:none;mso-padding-alt:0;"><span style="font-weight:700;">LEARN MORE</span><br><span style="font-weight:400;">See our work</span></a></div></div>
+          <!--[if mso]></td></tr></table><![endif]-->
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="spacer-block block" padding="0">
+      <mj-column>
+        <mj-spacer height="30px" container-background-color="#FFFFFF" />
+      </mj-column>
+    </mj-section>
+    <!-- END: CTA Buttons 2x1 (two-line) -->
+
     <!-- START: Signature (no photo) -->
-    <!-- Text-only sign-off; a photo/signature-image variant can follow once
-         GLAAD supplies the art (TPL Signature Card (photo) is the model). -->
+    <!-- Text-only sign-off; Signature (photo) below is the variant with a
+         photo and a signature image. -->
     <mj-section css-class="signature-block block" background-color="#FFFFFF" padding="0 30px">
       <mj-column>
         <mj-text padding="0">
@@ -317,6 +438,60 @@
       </mj-column>
     </mj-section>
     <!-- END: Signature (no photo) -->
+
+    <!-- START: Signature (photo) -->
+    <!-- TPL's Signature Card (photo) in GLAAD's type and gutters. The photo
+         and signature art are PLACEHOLDERS until GLAAD supplies the real files
+         (keep the names, or update both twins): the photo must stay a SQUARE
+         source file, since data-image-shape-toggle (on BOTH twins) rounds it
+         with border-radius and an editor may pick Square. Every image is a
+         light/dark pair (light-only + dark-only twin, the dark one inside
+         [if !mso]); the importer turns each dark twin into a Dark Mode Image
+         URL field. The black signature carries a 1px white halo, like the
+         social icons, for Gmail apps and Outlook desktop, which darken the
+         email without running the swap.
+         mj-group never stacks: the 110 + 430 = 540px pair stays side by side
+         on phones, where styles.css pins the photo column at 110px and gives
+         the text the rest (guide §6e). data-no-width-toggle: the px group
+         fills the content box, so a wider gutter would overflow it.
+         data-mobile-only-padding-right: the px group pins the right gutter
+         at 600px (the left one still moves the left-packed pair), while on
+         phones the calc() text column follows it, so the row's Padding Right
+         works on phones only and is labeled that way (Inert Audit FAIL,
+         2026-11-16; importer conventions.md, per-side padding pinned by a
+         fixed-px column). -->
+    <mj-section css-class="signature-block block" background-color="#FFFFFF" padding="0 30px">
+      <mj-column>
+        <mj-text padding="0">
+          <p><em>With gratitude,</em></p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="signature-block block" background-color="#FFFFFF" padding="20px 30px 0" data-no-width-toggle data-mobile-only-padding-right>
+      <mj-group>
+        <mj-column vertical-align="middle" width="110px" css-class="signature-img" padding="0 10px 0 0">
+          <mj-image src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-signature-photo.png" width="100px" align="left" alt="Sarah Kate Ellis" border-radius="50%" data-image-shape-toggle padding="0" css-class="light-only" />
+          <mj-raw><!--[if !mso]><!--></mj-raw>
+          <mj-image src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-signature-photo-dark.png" width="100px" align="left" alt="Sarah Kate Ellis" border-radius="50%" data-image-shape-toggle padding="0" css-class="dark-only" data-style-dark-mode />
+          <mj-raw><!--<![endif]--></mj-raw>
+        </mj-column>
+        <mj-column vertical-align="middle" width="430px" css-class="signature-text" padding="0 0 0 10px">
+          <mj-image src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-signature-black.png" width="140px" align="left" alt="Signature of Sarah Kate Ellis" padding="0" css-class="light-only" />
+          <mj-raw><!--[if !mso]><!--></mj-raw>
+          <mj-image src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-signature-white.png" width="140px" align="left" alt="Signature of Sarah Kate Ellis" padding="0" css-class="dark-only" data-style-dark-mode />
+          <mj-raw><!--<![endif]--></mj-raw>
+          <mj-text padding="10px 0 0">
+            <p><strong>Sarah Kate Ellis</strong><br />President &amp; CEO, GLAAD</p>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section css-class="spacer-block block" padding="0">
+      <mj-column>
+        <mj-spacer height="30px" container-background-color="#FFFFFF" />
+      </mj-column>
+    </mj-section>
+    <!-- END: Signature (photo) -->
 
     <!-- START: Image (full width) -->
     <!-- Two image blocks rather than one with an indent control: an image

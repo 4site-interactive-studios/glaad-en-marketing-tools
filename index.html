@@ -121,15 +121,46 @@
     figcaption { padding: 10px 12px; font-size: 14px; }
     figcaption strong { display: block; font-size: 15px; }
     figcaption span { color: var(--muted); }
-    /* A block's editable fields: click the count to list them by section. */
-    .fields { margin-top: 2px; font-size: 13px; }
-    .fields summary { cursor: pointer; color: var(--muted); font-size: 14px; }
-    .fields summary:hover { color: var(--ink); }
-    .fields .field-section { margin: 10px 0 2px; font-weight: 600; color: var(--ink); }
-    .fields ul { columns: 1; list-style: none; margin: 0; padding: 0; }
-    .fields li { display: flex; justify-content: space-between; gap: 8px; padding: 2px 0; border-bottom: 1px solid var(--panel); }
-    .fields .field-label { color: var(--ink); }
-    .fields .kind { flex: none; font-size: 12px; }
+    /* A block's editable fields: the count opens a pop-up listing them. */
+    .fields-btn {
+      font: inherit; font-size: 14px; color: var(--cta); background: none;
+      border: 0; padding: 0; cursor: pointer;
+      text-decoration: underline; text-underline-offset: 2px;
+    }
+    .fields-btn:hover { color: var(--navy); }
+    dialog.fields {
+      width: min(720px, calc(100vw - 32px)); max-height: min(80vh, 760px);
+      padding: 0; border: 0; border-radius: 10px; color: var(--ink);
+      box-shadow: 0 20px 60px rgba(17, 17, 17, 0.35);
+    }
+    dialog.fields[open] { display: flex; flex-direction: column; }
+    dialog.fields::backdrop { background: rgba(17, 17, 17, 0.5); }
+    .fields-head {
+      flex: none; display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 16px; padding: 16px 20px; border-bottom: 1px solid var(--line);
+    }
+    .fields-head h2 { margin: 0; font-size: 19px; }
+    .fields-head p { margin: 2px 0 0; font-size: 14px; color: var(--muted); }
+    .fields-close {
+      flex: none; font: inherit; font-size: 22px; line-height: 1; color: var(--muted);
+      background: none; border: 0; padding: 2px 6px; border-radius: 4px; cursor: pointer;
+    }
+    .fields-close:hover { color: var(--ink); background: var(--panel); }
+    .fields-body { overflow: auto; min-height: 0; padding: 4px 20px 20px; columns: 2 260px; column-gap: 28px; font-size: 14px; }
+    .fields-group { break-inside: avoid; }
+    .fields-group h3 { margin: 14px 0 4px; font-size: 14px; }
+    .fields-group ul { list-style: none; margin: 0; padding: 0; }
+    .fields-group li { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0; border-bottom: 1px solid var(--panel); }
+    .fields-group .kind { flex: none; font-size: 12px; color: var(--muted); }
+    /* Demo view: what a right-click shows instead of the browser menu. */
+    .ctx-card {
+      position: fixed; inset: auto; margin: 0; max-width: 280px;
+      padding: 12px 14px; border: 0; border-radius: 8px;
+      background: var(--navy); color: #FFFFFF; font-size: 14px; line-height: 1.4;
+      box-shadow: 0 10px 30px rgba(17, 17, 17, 0.3);
+    }
+    .ctx-card strong { display: block; font-size: 15px; }
+    .ctx-card span { color: #DCE6F2; }
     footer { max-width: 1240px; margin: 40px auto 0; padding: 16px 24px 32px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
   </style>
   <script>
@@ -237,6 +268,22 @@
     <a href="https://github.com/4site-interactive-studios/glaad-en-marketing-tools">github.com/4site-interactive-studios/glaad-en-marketing-tools</a>.</span>
   </footer>
 
+  <dialog class="fields" id="fields-dialog" aria-labelledby="fields-title">
+    <div class="fields-head">
+      <div>
+        <h2 id="fields-title"></h2>
+        <p id="fields-count"></p>
+      </div>
+      <button type="button" class="fields-close" id="fields-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="fields-body" id="fields-body"></div>
+  </dialog>
+
+  <div class="ctx-card" id="ctx-card" popover="manual" role="note">
+    <strong>GLAAD email template</strong>
+    <span>A draft by 4Site Studios for GLAAD's review.</span>
+  </div>
+
   <script>
     const PATHS = {
       html: { local: 'dist/local/', en: 'dist/en/' },
@@ -342,15 +389,16 @@
       $('meta').textContent = `Exported ${when} for EN client ${m.clientId}, ${owner}, ${folder}.`;
     }).catch(() => { $('meta').textContent = ''; });
 
-    // A block's editable fields as a click-to-expand list: each field's label
-    // and type, grouped by section in field order, read from the import itself.
+    // A block's editable fields, in a pop-up: each field's label and type,
+    // grouped by section in field order, read from the import itself.
     const KINDS = { Select: 'Dropdown', ImageURL: 'Image', Link: 'Link', Text: 'Text', RTE: 'Rich text', HTML: 'HTML' };
-    function fieldList(fields) {
-      const details = document.createElement('details');
-      details.className = 'fields';
-      const summary = document.createElement('summary');
-      summary.textContent = `${fields.length} editable field${fields.length === 1 ? '' : 's'}`;
-      details.append(summary);
+    const fieldsDialog = $('fields-dialog');
+    const fieldCount = (n) => `${n} editable field${n === 1 ? '' : 's'}`;
+    function showFields(blockName, fields) {
+      $('fields-title').textContent = blockName;
+      $('fields-count').textContent = fieldCount(fields.length);
+      const body = $('fields-body');
+      body.replaceChildren();
       const sections = new Map();
       for (const f of fields) {
         const key = f.section || 'Other';
@@ -358,25 +406,33 @@
         sections.get(key).push(f);
       }
       for (const [section, list] of sections) {
-        const heading = document.createElement('p');
-        heading.className = 'field-section';
+        const group = document.createElement('div');
+        group.className = 'fields-group';
+        const heading = document.createElement('h3');
         heading.textContent = section;
         const ul = document.createElement('ul');
         for (const f of list) {
           const li = document.createElement('li');
           const label = document.createElement('span');
-          label.className = 'field-label';
           label.textContent = f.label || f.name;
           const kind = document.createElement('span');
           kind.className = 'kind';
-          kind.textContent = KINDS[f.type] ?? f.type;
+          const options = Array.isArray(f.options) ? f.options.length : 0;
+          kind.textContent = f.type === 'Select' && options
+            ? `Dropdown, ${options} option${options === 1 ? '' : 's'}`
+            : KINDS[f.type] ?? f.type;
           li.append(label, kind);
           ul.append(li);
         }
-        details.append(heading, ul);
+        group.append(heading, ul);
+        body.append(group);
       }
-      return details;
+      body.scrollTop = 0;
+      fieldsDialog.showModal();
     }
+    $('fields-close').addEventListener('click', () => fieldsDialog.close());
+    // A click on the backdrop lands on the dialog itself; its contents fill it.
+    fieldsDialog.addEventListener('click', (e) => { if (e.target === fieldsDialog) fieldsDialog.close(); });
 
     // Blocks, from the EN block import itself: name, thumbnail, fields.
     getJson(PATHS.blocks).then((blocks) => {
@@ -400,7 +456,13 @@
           detail.textContent = 'Added by the importer';
           cap.append(name, detail);
         } else {
-          cap.append(name, fieldList(fields));
+          const open = document.createElement('button');
+          open.type = 'button';
+          open.className = 'fields-btn';
+          open.textContent = fieldCount(fields.length);
+          open.setAttribute('aria-haspopup', 'dialog');
+          open.addEventListener('click', () => showFields(b.name, fields));
+          cap.append(name, open);
         }
         fig.append(img, cap);
         grid.append(fig);
@@ -605,6 +667,51 @@
       zipAndSave(entries, 'glaad-en-marketing-tools.zip', $('zip-all'), 'Download everything (ZIP)');
     });
 
+
+    // Demo view only: a right-click shows a short note instead of the
+    // browser menu, in the page and inside the email preview alike. A
+    // deterrent, not protection: View Source and the developer tools still
+    // work, and every file is public at its own URL. ?downloads keeps the
+    // normal menu. A popover sits in the top layer, so it also shows over
+    // the open fields pop-up; without popover support it falls back to hidden.
+    if (document.documentElement.classList.contains('demo')) {
+      const card = $('ctx-card');
+      const canPop = typeof card.showPopover === 'function';
+      if (!canPop) card.hidden = true;
+      const isOpen = () => (canPop ? card.matches(':popover-open') : !card.hidden);
+      const hideCard = () => {
+        if (!isOpen()) return;
+        if (canPop) card.hidePopover(); else card.hidden = true;
+      };
+      const showCard = (x, y) => {
+        hideCard();
+        if (canPop) card.showPopover(); else card.hidden = false;
+        const r = card.getBoundingClientRect();
+        card.style.left = `${Math.max(8, Math.min(x, innerWidth - r.width - 8))}px`;
+        card.style.top = `${Math.max(8, Math.min(y, innerHeight - r.height - 8))}px`;
+      };
+      document.addEventListener('contextmenu', (e) => { e.preventDefault(); showCard(e.clientX, e.clientY); });
+      document.addEventListener('pointerdown', (e) => { if (!card.contains(e.target)) hideCard(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideCard(); });
+      addEventListener('scroll', hideCard, true);
+      addEventListener('resize', hideCard);
+      // The preview is a same-origin frame, so its events need their own
+      // listeners, re-attached each time a new email loads into it.
+      const frame = $('frame');
+      const armFrame = () => {
+        const doc = frame.contentDocument;
+        if (!doc || doc.__ctxArmed) return;
+        doc.__ctxArmed = true;
+        doc.addEventListener('contextmenu', (e) => {
+          e.preventDefault();
+          const r = frame.getBoundingClientRect();
+          showCard(r.left + e.clientX, r.top + e.clientY);
+        });
+        doc.addEventListener('pointerdown', hideCard);
+      };
+      frame.addEventListener('load', armFrame);
+      armFrame();
+    }
   </script>
 </body>
 </html>

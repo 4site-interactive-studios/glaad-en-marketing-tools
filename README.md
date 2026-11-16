@@ -10,8 +10,8 @@ import files with editable fields.
 It mirrors GLAAD's current email (the "Thank you for joining our email list"
 autoresponder): gray page, white 600px card, cyan logo, Arial copy, a "Follow
 Us!" icon row and a near-black footer. On top of that it adds year-end appeal
-blocks (match banner, gift amount buttons, CTA button, signature) and dark
-mode.
+blocks (match banner, gift amount buttons, CTA buttons alone or in rows of
+two and three, signatures with and without a photo) and dark mode.
 
 ## What's in the repo
 
@@ -62,13 +62,19 @@ for the full page with the setup steps, export details and every download:
   Mail and iOS Mail do; Gmail apps and Outlook desktop darken emails their
   own way.
 - **Blocks:** every block in the EN block import, with its thumbnail and its
-  number of editable fields. Click the count to list every field (label and
-  type, grouped by section), read from the import itself.
+  number of editable fields. Click the count for a pop-up listing every field
+  (label and type, with each dropdown's number of options, grouped by
+  section), read from the import itself.
 - **Files** (`?downloads` only): the EN template and block imports, the
   example emails as HTML with EN image paths, and every upload file (one at a
   time, or all in a ZIP the page builds in the browser), plus a ZIP of
   everything in `dist/` and `upload/`. The export details line under the
   title is `?downloads` only too.
+
+In the demo view a right-click, on the page or inside the email preview,
+shows a short "draft by 4Site Studios" note instead of the browser menu. It
+is a deterrent only: View Source and the browser's developer tools still
+work, and every file is public at its own URL.
 
 The page reads `dist/files.json`, `dist/en/en-blocks-import.json` and
 `dist/en/export-manifest.json`, so it updates itself whenever the outputs are
@@ -157,7 +163,13 @@ npm run export-en                 # EN import JSON + thumbnails, via the importe
 | Body Copy | Rich-text copy at the 30px baseline | content, link color, side padding, gap below |
 | Gift Amount Buttons 4x1 | $50 / $100 / $250 / OTHER, 120px each; stack full column on phones | each button's label, link, colors and width; side padding up to 20px |
 | CTA Button | Centered DONATE NOW button | label, link, colors, width, alignment, gap below |
+| CTA Buttons 2x1 | Two buttons sized to their labels, centered; stack on phones | each button's label, link and colors, row alignment (desktop), gap below |
+| CTA Buttons 3x1 | Three buttons sized to their labels (keep labels short); stack on phones | each button's label, link and colors, row alignment (desktop), gap below |
+| CTA Buttons 2x1 (fixed width) | Two equal 260px buttons filling the row; stack on phones | each button's label, link and colors, gap below |
+| CTA Buttons 3x1 (fixed width) | Three equal 166px buttons ($50 / $100 / $250 with amount prefills); stack on phones | each button's label, link and colors, gap below |
+| CTA Buttons 2x1 (two-line) | Two 260px buttons with a bold first line and a regular second line | each button's two label lines, link and colors, gap below |
 | Signature (no photo) | "With gratitude," plus name and title | content, side padding, gap below |
+| Signature (photo) | "With gratitude," then a round photo beside a signature image, name and title; stays side by side on phones | photo and signature images with their dark mode versions and alt text, photo shape (circle or square), name and title, padding, gap below |
 | Image (full width) | 600px edge-to-edge image | image, link, alt text, gap below |
 | Image (indented) | 540px image aligned to the copy | image, link, alt text, gap below |
 | Social Links | "Follow Us!" heading plus four icons (black with a thin white halo; solid white in dark mode) | heading (show/hide), each icon's link and alt text (shared by both icon sets), light icon images (Social 1-4), dark icon images (Social 5-8), gap below |
@@ -249,12 +261,19 @@ app pre-selects TPL's account values on load, and they must be replaced.
   broken.
 - **Owner ID**: regenerate the import files with GLAAD's real owner (and
   folder) ID, see "Keeping everything in sync".
-- **Gift amounts**: match the buttons to the amounts on GLAAD's donation page,
+- **Gift amounts** (Gift Amount Buttons 4x1 and CTA Buttons 3x1 (fixed
+  width)): match the buttons to the amounts on GLAAD's donation page,
   and click each through from a real test email. EN only applies a prefill on
   the first click from an email, and we could not check the live page from
   here.
 - **Signature**: confirm the name and title (Sarah Kate Ellis, President &
-  CEO) with GLAAD before the first send.
+  CEO) with GLAAD before the first send. Signature (photo) ships with
+  PLACEHOLDER art: replace `glaad-signature-photo.png` (a square headshot,
+  200px or larger; the block rounds it) and the signature pair
+  (`glaad-signature-black.png` with a thin white halo, and
+  `glaad-signature-white.png` for dark mode, both 280x80 on a transparent
+  background), keeping the filenames or updating the fields. A real photo
+  can use the same file for `glaad-signature-photo-dark.png`.
 - **Test send**: send one through EN to Email on Acid and check Outlook
   desktop, Gmail and Apple Mail, light and dark, at desktop and phone widths.
 
