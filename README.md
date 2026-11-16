@@ -62,7 +62,8 @@ for the full page with the setup steps, export details and every download:
   Mail and iOS Mail do; Gmail apps and Outlook desktop darken emails their
   own way.
 - **Blocks:** every block in the EN block import, with its thumbnail and its
-  number of editable fields.
+  number of editable fields. Click the count to list every field (label and
+  type, grouped by section), read from the import itself.
 - **Files** (`?downloads` only): the EN template and block imports, the
   example emails as HTML with EN image paths, and every upload file (one at a
   time, or all in a ZIP the page builds in the browser), plus a ZIP of

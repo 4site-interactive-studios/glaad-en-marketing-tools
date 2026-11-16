@@ -114,12 +114,22 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 20px;
+      align-items: start;
     }
     figure { margin: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #FFFFFF; }
     figure img { display: block; width: 100%; height: 170px; object-fit: contain; object-position: top; background: var(--panel); border-bottom: 1px solid var(--line); }
     figcaption { padding: 10px 12px; font-size: 14px; }
     figcaption strong { display: block; font-size: 15px; }
     figcaption span { color: var(--muted); }
+    /* A block's editable fields: click the count to list them by section. */
+    .fields { margin-top: 2px; font-size: 13px; }
+    .fields summary { cursor: pointer; color: var(--muted); font-size: 14px; }
+    .fields summary:hover { color: var(--ink); }
+    .fields .field-section { margin: 10px 0 2px; font-weight: 600; color: var(--ink); }
+    .fields ul { columns: 1; list-style: none; margin: 0; padding: 0; }
+    .fields li { display: flex; justify-content: space-between; gap: 8px; padding: 2px 0; border-bottom: 1px solid var(--panel); }
+    .fields .field-label { color: var(--ink); }
+    .fields .kind { flex: none; font-size: 12px; }
     footer { max-width: 1240px; margin: 40px auto 0; padding: 16px 24px 32px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
   </style>
   <script>
@@ -332,14 +342,51 @@
       $('meta').textContent = `Exported ${when} for EN client ${m.clientId}, ${owner}, ${folder}.`;
     }).catch(() => { $('meta').textContent = ''; });
 
-    // Blocks, from the EN block import itself: name, thumbnail, field count.
+    // A block's editable fields as a click-to-expand list: each field's label
+    // and type, grouped by section in field order, read from the import itself.
+    const KINDS = { Select: 'Dropdown', ImageURL: 'Image', Link: 'Link', Text: 'Text', RTE: 'Rich text', HTML: 'HTML' };
+    function fieldList(fields) {
+      const details = document.createElement('details');
+      details.className = 'fields';
+      const summary = document.createElement('summary');
+      summary.textContent = `${fields.length} editable field${fields.length === 1 ? '' : 's'}`;
+      details.append(summary);
+      const sections = new Map();
+      for (const f of fields) {
+        const key = f.section || 'Other';
+        if (!sections.has(key)) sections.set(key, []);
+        sections.get(key).push(f);
+      }
+      for (const [section, list] of sections) {
+        const heading = document.createElement('p');
+        heading.className = 'field-section';
+        heading.textContent = section;
+        const ul = document.createElement('ul');
+        for (const f of list) {
+          const li = document.createElement('li');
+          const label = document.createElement('span');
+          label.className = 'field-label';
+          label.textContent = f.label || f.name;
+          const kind = document.createElement('span');
+          kind.className = 'kind';
+          kind.textContent = KINDS[f.type] ?? f.type;
+          li.append(label, kind);
+          ul.append(li);
+        }
+        details.append(heading, ul);
+      }
+      return details;
+    }
+
+    // Blocks, from the EN block import itself: name, thumbnail, fields.
     getJson(PATHS.blocks).then((blocks) => {
       const grid = $('grid');
       let own = 0;
       for (const b of blocks) {
         const utility = b.name.startsWith('Utility — ');
         if (!utility) own += 1;
-        const fields = Object.keys((typeof b.data === 'string' ? JSON.parse(b.data) : b.data)?.replacements ?? {}).length;
+        const fields = Object.values((typeof b.data === 'string' ? JSON.parse(b.data) : b.data)?.replacements ?? {})
+          .sort((x, y) => (x.order ?? 0) - (y.order ?? 0));
         const fig = document.createElement('figure');
         const img = document.createElement('img');
         img.src = PATHS.upload + String(b.thumbnail || '').split('/').pop();
@@ -348,13 +395,17 @@
         const cap = document.createElement('figcaption');
         const name = document.createElement('strong');
         name.textContent = b.name;
-        const detail = document.createElement('span');
-        detail.textContent = utility ? 'Added by the importer' : `${fields} editable field${fields === 1 ? '' : 's'}`;
-        cap.append(name, detail);
+        if (utility || !fields.length) {
+          const detail = document.createElement('span');
+          detail.textContent = 'Added by the importer';
+          cap.append(name, detail);
+        } else {
+          cap.append(name, fieldList(fields));
+        }
         fig.append(img, cap);
         grid.append(fig);
       }
-      $('blocks-summary').textContent = `${own} GLAAD blocks, plus ${blocks.length - own} utility blocks the importer adds. Each thumbnail is what editors see in EN's block list.`;
+      $('blocks-summary').textContent = `${own} GLAAD blocks, plus ${blocks.length - own} utility blocks the importer adds. Each thumbnail is what editors see in EN's block list; click a block's field count to see every field editors can change.`;
     }).catch((err) => { $('blocks-summary').textContent = `Could not load the blocks (${err.message}).`; });
 
     // Upload files, from dist/files.json (written by npm run build).
