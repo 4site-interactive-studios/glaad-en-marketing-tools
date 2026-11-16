@@ -1,0 +1,204 @@
+/* GLAAD template styles. Ships to EN as the Template Styles block, where
+   EN's inliner writes plain rules onto the elements at send (guide §2).
+   NO CHILD COMBINATORS anywhere in this file: EN escapes `>` to `&gt;` on
+   edit and the rule silently dies (guide §2d).
+
+   Dark mode follows TPL's measured model (guide §2c, TPL styles.css): the
+   light/dark SWAP lives in the template head; the REPAINTS below are design.
+   Two branches, every declaration !important (the base rules are inlined
+   onto the elements, guide §2b):
+   - the prefers-color-scheme dark media query: Apple Mail, iOS Mail and
+     friends.
+   - [data-ogsc] inside an always-true media query: Outlook.com / OWA and
+     Outlook for Mac. EN's inliner deletes it at top level (guide §2a), and
+     it only fires below the unclassed seed div at the top of mj-body.
+   Dark values clear Outlook.com's contrast test against its #333333 base
+   (text 5.4:1 with margin, grounds 4.5:1 against their text): white text,
+   Light Cyan #5DCBEB links (Cyan #00B2E3 is only ~5.1:1, so it would be
+   repainted), CTA Blue buttons with white labels. Gmail apps and Outlook
+   desktop run neither branch; they darken the email on their own. */
+
+/* Type table (GLAAD's current email: Arial, 16px body at 150%). Line-heights
+   are absolute values per size, not a ratio. */
+a {
+  color: #105BAB;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+  mso-line-height-rule: exactly;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+  mso-line-height-rule: exactly;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  mso-line-height-rule: exactly;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+  mso-line-height-rule: exactly;
+}
+
+/* Headings on a dark band (Match Banner): the h rules above set black, so
+   the band's mj-text carries this hook. Paragraphs need none; they inherit
+   the mj-text color, which is the block's Text Color field. */
+.text-inverse h1,
+.text-inverse h2,
+.text-inverse h3,
+.text-inverse h4,
+.text-inverse h5,
+.text-inverse h6 {
+  color: #FFFFFF;
+}
+
+/* 16px between paragraphs, as in GLAAD's email (a browser-default 1em).
+   Stated explicitly because EN otherwise inlines its own 13px (guide §2). */
+p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 16px 0;
+  mso-line-height-rule: exactly;
+}
+
+/* Footer copy. A class on the mj-text, not inline styles in the copy:
+   EN's editor drops inline styles from RTE content on the first edit. */
+.footer-text p,
+.footer-text a {
+  font-size: 14px;
+  line-height: 18px;
+  mso-line-height-rule: exactly;
+}
+
+.footer-text p {
+  margin: 0 0 8px;
+}
+
+/* Link color hooks: the option pool for the importer's per-block Link
+   Color select (single-declaration `.link-* a` rules; sheet order is
+   dropdown order). The hook sits on the mj-text, outside the editable
+   content, because EN strips attributes from anchors on edit. */
+.link-inverse a {
+  color: #FFFFFF;
+}
+
+.link-black a {
+  color: #000000;
+}
+
+/* Outlook.com dark mode. Wrapped in a conditional media query because EN's
+   inliner deletes top-level [data-ogsc] rules (guide §2a). */
+@media only screen and (max-width: 9999px) {
+  [data-ogsc] .block,
+  [data-ogsc] .block table[align=center],
+  [data-ogsc] .spacer-block td {
+    background-color: #000000 !important;
+  }
+  [data-ogsc] a {
+    color: #5DCBEB !important;
+  }
+  [data-ogsc] .wysiwyg h1,
+  [data-ogsc] .wysiwyg h2,
+  [data-ogsc] .wysiwyg h3,
+  [data-ogsc] .wysiwyg h4,
+  [data-ogsc] .wysiwyg h5,
+  [data-ogsc] .wysiwyg h6,
+  [data-ogsc] .block h1,
+  [data-ogsc] .block h2,
+  [data-ogsc] .block h3,
+  [data-ogsc] .block h4,
+  [data-ogsc] .block h5,
+  [data-ogsc] .block h6,
+  [data-ogsc] .block p,
+  [data-ogsc] .block span,
+  [data-ogsc] .block li,
+  [data-ogsc] .block div {
+    color: #FFFFFF !important;
+  }
+  [data-ogsc] .email-ground {
+    color: #FFFFFF !important;
+    background-color: #000000 !important;
+  }
+  [data-ogsc] .button td,
+  [data-ogsc] .button a {
+    background-color: #0313C4 !important;
+    border-color: #0313C4 !important;
+    color: #FFFFFF !important;
+  }
+  /* Outlook.com dark paints white behind a hovered image (TPL, email-bugs
+     #162), which would flash a white box behind the transparent logo. */
+  [data-ogsc] img:hover {
+    background-color: transparent !important;
+  }
+}
+
+/* Apple Mail, iOS Mail and other clients that honour the media query. */
+@media (prefers-color-scheme: dark) {
+  body,
+  .email-body,
+  .email-ground {
+    color: #FFFFFF !important;
+    background-color: #000000 !important;
+  }
+  a {
+    color: #5DCBEB !important;
+  }
+  .wysiwyg h1,
+  .wysiwyg h2,
+  .wysiwyg h3,
+  .wysiwyg h4,
+  .wysiwyg h5,
+  .wysiwyg h6 {
+    color: #FFFFFF !important;
+  }
+  /* table[align=center] = a section's outer table, which carries the
+     authored background inline (no child combinator, guide §2d). */
+  .block,
+  .block table[align=center],
+  .spacer-block td {
+    background-color: #000000 !important;
+  }
+  /* Copy authored dark on white would vanish on black. mj-text compiles to
+     a div carrying inline color, so `.block div` reaches bare copy too. */
+  .block h1,
+  .block h2,
+  .block h3,
+  .block h4,
+  .block h5,
+  .block h6,
+  .block p,
+  .block span,
+  .block li,
+  .block div {
+    color: #FFFFFF !important;
+  }
+  /* Buttons stay CTA Blue with white labels; without this the `a` rule
+     above would turn every label Light Cyan on blue. */
+  .button td,
+  .button a {
+    background-color: #0313C4 !important;
+    border-color: #0313C4 !important;
+    color: #FFFFFF !important;
+  }
+}

@@ -1,0 +1,351 @@
+<mjml lang="en">
+  <mj-head>
+    <!-- en-tools-config {
+      "spacingScale": { "None": 0, "X-Small": 10, "Small": 20, "Medium": 30, "Large": 40, "X-Large": 60 },
+      "widthPresets": { "Full Bleed": 0, "X-Small": 10, "Small": 20, "Medium": 30, "Large": 40, "X-Large": 60 },
+      "geometryReachPx": 60,
+      "assetPrefix": "glaad-",
+      "brandColors": { "Cyan": "#00B2E3", "Light Cyan": "#5DCBEB", "Azure": "#008DD0", "Blue": "#105BAB", "Navy": "#0B4280", "CTA Blue": "#0313C4", "Near Black": "#111111", "Charcoal": "#454545", "Light Gray": "#DEDEDE" }
+    } -->
+    <!-- GLAAD's live email sits on a 10px grid (15/20/30/10px), so the scale
+         is declared on tens rather than TPL's sixteens. The content baseline
+         is Medium (30px), the gutter GLAAD's current template uses. The brand
+         colors are sampled from Glaad_Cyan_email_200.png plus the footer,
+         body-text and page grays of the live email, and CTA Blue from the
+         live email's own Outlook CTA rule (.msCta); the NAMES are ours, not
+         GLAAD's — swap in their brand-guide names if they have them.
+         assetPrefix: every file uploaded to GLAAD's shared EN image folder
+         starts with glaad-. Our own images are named that way in
+         src/assets/; the importer adds it to the thumbnails and placeholder
+         it names (conventions.md, en-tools-config). -->
+    <mj-breakpoint width="600px" />
+    <mj-title>GLAAD example: Year-end appeal</mj-title>
+    <!-- No mj-preview: EN injects its own hidden preheader from each email's
+         Preview Text setting (guide §2); a baked-in one would double up. -->
+
+    <!-- Version stamp + meta run (guide §2f, TPL CLAUDE.md "Versioning").
+         Without a versions.json beside src/, the importer collapses both
+         placeholders and the stamp reads "GLAAD Email Template". -->
+    <mj-raw>
+      <!-- en-tools-keep GLAAD Email Template (__TEMPLATE_DATE__) v__TEMPLATE_VERSION__ -->
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+      <meta name="format-detection" content="telephone=no" />
+    </mj-raw>
+
+    <mj-attributes>
+      <mj-text
+        color="#000000"
+        font-size="16px"
+        font-weight="400"
+        font-family="Arial, Helvetica, sans-serif"
+        line-height="24px"
+        css-class="wysiwyg"
+      />
+      <mj-image padding="0" />
+      <!-- GLAAD's CTA, from the live email's .msCta rule: #0313C4 ground,
+           10px 30px padding, 3px corners, white text. Labels are authored
+           ALL CAPS as literal text (guide §8 item 7b). width="auto" is not
+           valid MJML, but it is what mints the importer's Button Width select
+           (default "Automatically Resize"); the importer filters the warning. -->
+      <mj-button width="auto"
+        css-class="button"
+        font-size="16px"
+        font-weight="700"
+        font-family="Arial, Helvetica, sans-serif"
+        line-height="20px"
+        border-radius="3px"
+        inner-padding="10px 30px"
+        color="#FFFFFF"
+        background-color="#0313C4"
+      />
+    </mj-attributes>
+
+    <!-- Head-resident MECHANISM CSS, copied from TPL main.mjml (which carries
+         the full measured rationale). It lives in the template head, not in
+         styles.css, because styles.css ships as the Template Styles BLOCK: an
+         email built without that block would otherwise lose the swap and
+         render BOTH halves of every light/dark pair. The dark REPAINTS stay in
+         styles.css. The [data-ogsc] reveal sits in an always-true media query
+         because EN's inliner deletes top-level [data-ogsc] rules (guide §2a). -->
+    <mj-raw>
+      <style type="text/css" data-en-tools-template-css>
+        .wysiwyg div p:first-child,
+        .wysiwyg div h1:first-child,
+        .wysiwyg div h2:first-child,
+        .wysiwyg div h3:first-child,
+        .wysiwyg div h4:first-child,
+        .wysiwyg div h5:first-child,
+        .wysiwyg div h6:first-child,
+        .wysiwyg div ul:first-child,
+        .wysiwyg div ol:first-child { margin-top: 0; }
+        .wysiwyg div p:last-child,
+        .wysiwyg div h1:last-child,
+        .wysiwyg div h2:last-child,
+        .wysiwyg div h3:last-child,
+        .wysiwyg div h4:last-child,
+        .wysiwyg div h5:last-child,
+        .wysiwyg div h6:last-child,
+        .wysiwyg div ul:last-child,
+        .wysiwyg div ol:last-child { margin-bottom: 0; }
+        .dark-only { display: none; }
+        :root { color-scheme: light dark; supported-color-schemes: light dark; }
+        @media only screen and (max-width: 9999px) {
+          [data-ogsc] .dark-only { display: block !important; }
+          [data-ogsc] .light-only { display: none !important; }
+        }
+        @media (prefers-color-scheme: dark) {
+          .light-only { display: none !important; }
+          .dark-only { display: block !important; }
+        }
+      </style>
+    </mj-raw>
+
+    <!-- Marketing Tools builder bands: editor chrome, never seen in an inbox.
+         Copied from TPL main.mjml, which documents why the two rules stay
+         separate and why the container merge tag must never be written
+         literally in this file. -->
+    <mj-raw>
+      <style type="text/css" data-en-tools-band>
+        div[data-container] { max-width: 600px; margin: 0 auto; }
+        [data-container="main"]:before{
+          content: "Email Template v__TEMPLATE_VERSION__";
+          display: block !important;
+          font-weight: 700 !important;
+          font-family: sans-serif !important;
+          color: #4e535c !important;
+          line-height: 1.75rem !important;
+          text-align: center !important;
+          margin-bottom: 2rem !important;
+          background-color: #d0d5dd !important;
+        }
+        :is(body):has(.en__emailbuilder__block) .marketing-tools-banner{
+          display: flex !important;
+          font-weight: 700 !important;
+          font-family: sans-serif !important;
+          color: #4e535c !important;
+          line-height: 2rem !important;
+          top: 1.75rem !important;
+          width: 100% !important;
+          max-width: 600px !important;
+          justify-content: center !important;
+          background-color: #d0d5dd !important;
+        }
+        :is(body):has(.en__emailbuilder__block) #head-styles{
+          position: absolute !important;
+        }
+      </style>
+    </mj-raw>
+
+    <mj-include path="./styles.css" type="css" />
+  </mj-head>
+  <mj-body css-class="email-body" background-color="#DEDEDE">
+
+    <!-- Outlook dark-mode seed (guide §2c, TPL styles.css "ARMING"). Outlook.com
+         only applies [data-ogsc] rules below an element it has repainted; the
+         unclassed outer div's inline black text guarantees that. No class,
+         and no CSS may target it. .email-ground is the classed ground both
+         dark branches paint. Light values match the page gray. -->
+    <mj-raw><div style="color:#000000;background-color:#DEDEDE;margin:0;padding:0;"><div class="email-ground" style="background-color:#DEDEDE;margin:0;padding:0;"></mj-raw>
+
+    <!-- START: Main Content -->
+
+    <!-- START: CTA Header -->
+    <!-- Logo left, button right (TPL's CTA Hero pattern). Percentage columns
+         inside mj-group, so the pair stays side by side on phones without the
+         fixed-px shrink guide §6e warns about: at 375px each column is ~157px,
+         the logo scales down inside its column and the button keeps its size.
+         Same top padding and gap as Logo Header, so swapping one header for
+         the other does not move the copy below. Both headers use the
+         transparent logo, so it sits on white in light mode and on black in
+         dark mode with no light/dark pair. The logo keeps a 10px inset
+         toward the button for narrow screens. The button
+         restates width/color/background-color from mj-attributes on purpose:
+         the importer mints fields only from attributes on the element (TPL
+         does the same on every button). -->
+    <mj-section css-class="image-block block" background-color="#FFFFFF" padding="20px 30px 0">
+      <mj-group>
+        <mj-column vertical-align="middle" width="50%">
+          <mj-image data-display-toggle src="assets/glaad-logo-cyan-transparent.png" alt="GLAAD" href="https://www.glaad.org/" width="160px" align="left" padding="0 10px 0 0" />
+        </mj-column>
+        <mj-column vertical-align="middle" width="50%">
+          <mj-button data-display-toggle width="auto" href="https://give.glaad.org/page/50945/donate/1?chain" align="right" padding="0" color="#FFFFFF" background-color="#0313C4">DONATE</mj-button>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section css-class="spacer-block block" padding="0">
+      <mj-column>
+        <mj-spacer height="40px" container-background-color="#FFFFFF" />
+      </mj-column>
+    </mj-section>
+    <!-- END: CTA Header -->
+
+    <!-- START: Match Banner -->
+    <!-- A Navy band for match and deadline messages. No `block` class on
+         purpose: the dark repaints target .block, and this band already
+         reads as dark, so it keeps its own ground (and white copy) in dark
+         mode instead of turning black. White copy clears Outlook.com's
+         4.5:1 ground test on Navy (9.6:1), so Outlook leaves it alone too.
+         text-inverse holds headings white (the h rules in styles.css are
+         black); paragraphs inherit the Text Color field. -->
+    <mj-section css-class="banner-block" background-color="#0B4280" padding="30px 30px">
+      <mj-column>
+        <mj-text css-class="wysiwyg text-inverse link-inverse" color="#FFFFFF" align="center" padding="0">
+          <h2>Your gift will be matched!</h2>
+          <p>Every gift made by December 31 will be matched dollar for dollar, doubling your impact for LGBTQ acceptance.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="spacer-block block" padding="0">
+      <mj-column>
+        <mj-spacer height="30px" container-background-color="#FFFFFF" />
+      </mj-column>
+    </mj-section>
+    <!-- END: Match Banner -->
+
+    <!-- START: Body Copy -->
+    <mj-section css-class="text-block block" background-color="#FFFFFF" padding="0 30px">
+      <mj-column>
+        <mj-text padding="0">
+          <p>Dear Friend,</p>
+          <p>As the year comes to a close, we're asking the people who make GLAAD's work possible to help us finish strong.</p>
+          <p>Every day, GLAAD works to make sure LGBTQ people are seen and represented with accuracy and respect, in the news, on screen and online. Your support is what keeps that work going.</p>
+          <p>Make a gift before December 31 and it will be matched dollar for dollar, so your support goes twice as far. Choose an amount below to get started.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="spacer-block block" padding="0">
+      <mj-column>
+        <mj-spacer height="30px" container-background-color="#FFFFFF" />
+      </mj-column>
+    </mj-section>
+    <!-- END: Body Copy -->
+
+    <!-- START: Gift Amount Buttons 4x1 -->
+    <!-- Four plain columns, NOT an mj-group: below the breakpoint they stack
+         into four full-width buttons (big tap targets) instead of squeezing
+         "OTHER" into ~55px at 320px. Gutter: section 20 + column 10 = the 30px
+         content baseline; 2 x 10 = 20px between buttons. Each button owns
+         10px below it, which is the gap between stacked buttons on phones;
+         on desktop it sits under the row, so the trailing gap is 20 (20 + 10
+         = the usual 30). Width is 120px, not 100%: MJML sizes the LINK only
+         for a px width, so a 100% button painted a full-width blue cell
+         around a narrower tap target. 120 = (600 - 2 x 20) / 4 - 2 x 10, the
+         column's full content width at the 20px section gutter, so
+         data-max-gutter="20" withholds the wider gutters that would overflow
+         it (guide §5, "Choose where the default gutter sits on the ladder").
+         data-desktop-only-width: stacked and centered on phones, the gutter
+         moves nothing there. data-no-width-toggle on each button: MJML
+         writes the px width onto the link too, so a Width field was dead at
+         both viewports (Inert Audit FAIL, 2026-11-16) and equal widths are
+         the point of the row.
+         Amount links use EN's documented prefill parameter
+         transaction.donationAmt next to GLAAD's own ?chain, joined with a RAW
+         `&` on purpose: `&amp;` reached the importer's Link URL fields
+         verbatim, where an editor sees it and EN may escape it again. Test the amounts
+         against GLAAD's donation page: EN applies prefills on the first click
+         from an email only, and they must match the page's options. -->
+    <mj-section css-class="button-block block" background-color="#FFFFFF" padding="0 20px" data-max-gutter="20" data-desktop-only-width>
+      <mj-column padding="0 10px">
+        <mj-button data-no-width-toggle width="120px" href="https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=50" align="center" padding="0 0 10px" color="#FFFFFF" background-color="#0313C4">$50</mj-button>
+      </mj-column>
+      <mj-column padding="0 10px">
+        <mj-button data-no-width-toggle width="120px" href="https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=100" align="center" padding="0 0 10px" color="#FFFFFF" background-color="#0313C4">$100</mj-button>
+      </mj-column>
+      <mj-column padding="0 10px">
+        <mj-button data-no-width-toggle width="120px" href="https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=250" align="center" padding="0 0 10px" color="#FFFFFF" background-color="#0313C4">$250</mj-button>
+      </mj-column>
+      <mj-column padding="0 10px">
+        <mj-button data-no-width-toggle width="120px" href="https://give.glaad.org/page/50945/donate/1?chain" align="center" padding="0 0 10px" color="#FFFFFF" background-color="#0313C4">OTHER</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="spacer-block block" padding="0">
+      <mj-column>
+        <mj-spacer height="20px" container-background-color="#FFFFFF" />
+      </mj-column>
+    </mj-section>
+    <!-- END: Gift Amount Buttons 4x1 -->
+
+    <!-- START: Signature (no photo) -->
+    <!-- Text-only sign-off; a photo/signature-image variant can follow once
+         GLAAD supplies the art (TPL Signature Card (photo) is the model). -->
+    <mj-section css-class="signature-block block" background-color="#FFFFFF" padding="0 30px">
+      <mj-column>
+        <mj-text padding="0">
+          <p><em>With gratitude,</em></p>
+          <p><strong>Sarah Kate Ellis</strong><br />President &amp; CEO, GLAAD</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="spacer-block block" padding="0">
+      <mj-column>
+        <mj-spacer height="30px" container-background-color="#FFFFFF" />
+      </mj-column>
+    </mj-section>
+    <!-- END: Signature (no photo) -->
+
+    <!-- START: Social Links -->
+    <!-- Light/dark icon twins (guide §2c, TPL's mj-image pattern applied to
+         mj-social): black glyphs in light mode, white glyphs where a client
+         honours the swap. The dark twin sits in a downlevel-revealed
+         [if !mso] pair so Outlook desktop never renders it; the plain
+         .dark-only hide in the template head covers everyone else. Gmail
+         apps and Outlook desktop cannot run the swap, so they keep the
+         black icons on whatever ground they darken to, so the black icons
+         carry a 1px white halo: invisible on the white block, an outline on
+         any ground a client darkens to (Dark Audit "bg-dependent-ink",
+         2026-11-16). Icons are 36px canvases (32px glyph + halo room), so
+         inner-padding is 3px to keep GLAAD's 42px icon pitch. -->
+    <mj-section css-class="social-block block" background-color="#FFFFFF" padding="0 30px">
+      <mj-column>
+        <mj-text align="center" padding="0 0 10px">
+          <h3>Follow Us!</h3>
+        </mj-text>
+        <mj-social css-class="light-only" mode="horizontal" align="center" icon-size="36px" icon-height="36px" icon-padding="0" inner-padding="3px" padding="0">
+          <mj-social-element src="assets/glaad-icon-facebook-black.png" href="https://www.facebook.com/GLAAD/" alt="Facebook"/>
+          <mj-social-element src="assets/glaad-icon-twitter-black.png" href="https://twitter.com/glaad" alt="Twitter"/>
+          <mj-social-element src="assets/glaad-icon-instagram-black.png" href="https://www.instagram.com/glaad/" alt="Instagram"/>
+          <mj-social-element src="assets/glaad-icon-youtube-black.png" href="https://www.youtube.com/channel/UCZmLgxP2N3Vj0XaQtohLT-A" alt="YouTube"/>
+        </mj-social>
+        <mj-raw><!--[if !mso]><!--></mj-raw>
+        <mj-social css-class="dark-only" data-style-dark-mode mode="horizontal" align="center" icon-size="36px" icon-height="36px" icon-padding="0" inner-padding="3px" padding="0">
+          <mj-social-element src="assets/glaad-icon-facebook-white.png" href="https://www.facebook.com/GLAAD/" alt="Facebook"/>
+          <mj-social-element src="assets/glaad-icon-twitter-white.png" href="https://twitter.com/glaad" alt="Twitter"/>
+          <mj-social-element src="assets/glaad-icon-instagram-white.png" href="https://www.instagram.com/glaad/" alt="Instagram"/>
+          <mj-social-element src="assets/glaad-icon-youtube-white.png" href="https://www.youtube.com/channel/UCZmLgxP2N3Vj0XaQtohLT-A" alt="YouTube"/>
+        </mj-social>
+        <mj-raw><!--<![endif]--></mj-raw>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="spacer-block block" padding="0">
+      <mj-column>
+        <mj-spacer height="30px" container-background-color="#FFFFFF" />
+      </mj-column>
+    </mj-section>
+    <!-- END: Social Links -->
+
+    <!-- START: Footer -->
+    <!-- The unsubscribe href is a PLACEHOLDER. EN builds the real link with
+         the editor's "Insert unsubscribe link" tool (an opt-in question plus
+         a subscription page), so it has to be inserted in EN, in this block's
+         Content field, before any broadcast goes out. -->
+    <mj-section css-class="footer-block block" background-color="#111111" padding="30px 30px">
+      <mj-column>
+        <mj-text css-class="wysiwyg footer-text link-inverse" color="#FFFFFF" align="center" padding="0">
+          <p>GLAAD &copy; All rights reserved.</p>
+          <p>GLAAD, 104 W 29th St, 4th Floor, New York, NY 10001</p>
+          <p><a href="https://www.glaad.org/unsubscribe-link-placeholder">Unsubscribe</a></p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section css-class="spacer-block block" padding="0">
+      <mj-column>
+        <mj-spacer height="0px" />
+      </mj-column>
+    </mj-section>
+    <!-- END: Footer -->
+
+    <!-- END: Main Content -->
+    <mj-raw></div></div></mj-raw>
+  </mj-body>
+</mjml>

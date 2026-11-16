@@ -1,0 +1,246 @@
+{
+  "note": "Written by npm run build for index.html.",
+  "uploads": [
+    {
+      "name": "glaad-icon-facebook-black.png",
+      "bytes": 1587
+    },
+    {
+      "name": "glaad-icon-facebook-white.png",
+      "bytes": 592
+    },
+    {
+      "name": "glaad-icon-instagram-black.png",
+      "bytes": 1795
+    },
+    {
+      "name": "glaad-icon-instagram-white.png",
+      "bytes": 615
+    },
+    {
+      "name": "glaad-icon-twitter-black.png",
+      "bytes": 1418
+    },
+    {
+      "name": "glaad-icon-twitter-white.png",
+      "bytes": 574
+    },
+    {
+      "name": "glaad-icon-youtube-black.png",
+      "bytes": 860
+    },
+    {
+      "name": "glaad-icon-youtube-white.png",
+      "bytes": 376
+    },
+    {
+      "name": "glaad-image-placeholder.png",
+      "bytes": 18408
+    },
+    {
+      "name": "glaad-logo-cyan-transparent.png",
+      "bytes": 9414
+    },
+    {
+      "name": "glaad-placeholder.png",
+      "bytes": 16696
+    },
+    {
+      "name": "glaad-thumbnail-body-copy.png",
+      "bytes": 116306
+    },
+    {
+      "name": "glaad-thumbnail-cta-button.png",
+      "bytes": 4877
+    },
+    {
+      "name": "glaad-thumbnail-cta-header.png",
+      "bytes": 18918
+    },
+    {
+      "name": "glaad-thumbnail-footer.png",
+      "bytes": 15242
+    },
+    {
+      "name": "glaad-thumbnail-gift-amount-buttons-4x1.png",
+      "bytes": 7270
+    },
+    {
+      "name": "glaad-thumbnail-image-full-width.png",
+      "bytes": 24577
+    },
+    {
+      "name": "glaad-thumbnail-image-indented.png",
+      "bytes": 21614
+    },
+    {
+      "name": "glaad-thumbnail-logo-header.png",
+      "bytes": 23050
+    },
+    {
+      "name": "glaad-thumbnail-match-banner.png",
+      "bytes": 29226
+    },
+    {
+      "name": "glaad-thumbnail-raw-html.png",
+      "bytes": 26383
+    },
+    {
+      "name": "glaad-thumbnail-signature-no-photo.png",
+      "bytes": 12974
+    },
+    {
+      "name": "glaad-thumbnail-social-links.png",
+      "bytes": 11577
+    },
+    {
+      "name": "glaad-thumbnail-template-styles.png",
+      "bytes": 16114
+    }
+  ],
+  "local": [
+    {
+      "name": "assets/glaad-icon-facebook-black.png",
+      "bytes": 1587
+    },
+    {
+      "name": "assets/glaad-icon-facebook-white.png",
+      "bytes": 592
+    },
+    {
+      "name": "assets/glaad-icon-instagram-black.png",
+      "bytes": 1795
+    },
+    {
+      "name": "assets/glaad-icon-instagram-white.png",
+      "bytes": 615
+    },
+    {
+      "name": "assets/glaad-icon-twitter-black.png",
+      "bytes": 1418
+    },
+    {
+      "name": "assets/glaad-icon-twitter-white.png",
+      "bytes": 574
+    },
+    {
+      "name": "assets/glaad-icon-youtube-black.png",
+      "bytes": 860
+    },
+    {
+      "name": "assets/glaad-icon-youtube-white.png",
+      "bytes": 376
+    },
+    {
+      "name": "assets/glaad-image-placeholder.png",
+      "bytes": 18408
+    },
+    {
+      "name": "assets/glaad-logo-cyan-transparent.png",
+      "bytes": 9414
+    },
+    {
+      "name": "example-news-update.html",
+      "bytes": 61196
+    },
+    {
+      "name": "example-news-update.mjml",
+      "bytes": 15813
+    },
+    {
+      "name": "example-welcome.html",
+      "bytes": 48305
+    },
+    {
+      "name": "example-welcome.mjml",
+      "bytes": 14103
+    },
+    {
+      "name": "example-year-end-appeal.html",
+      "bytes": 68666
+    },
+    {
+      "name": "example-year-end-appeal.mjml",
+      "bytes": 18993
+    },
+    {
+      "name": "main.html",
+      "bytes": 87593
+    },
+    {
+      "name": "main.mjml",
+      "bytes": 23012
+    },
+    {
+      "name": "styles.css",
+      "bytes": 5620
+    }
+  ],
+  "en": [
+    {
+      "name": "en-blocks-import.json",
+      "bytes": 273617
+    },
+    {
+      "name": "en-template-import.json",
+      "bytes": 5832
+    },
+    {
+      "name": "example-news-update.html",
+      "bytes": 62087
+    },
+    {
+      "name": "example-news-update.mjml",
+      "bytes": 16704
+    },
+    {
+      "name": "example-welcome.html",
+      "bytes": 49034
+    },
+    {
+      "name": "example-welcome.mjml",
+      "bytes": 14832
+    },
+    {
+      "name": "example-year-end-appeal.html",
+      "bytes": 69395
+    },
+    {
+      "name": "example-year-end-appeal.mjml",
+      "bytes": 19722
+    },
+    {
+      "name": "export-manifest.json",
+      "bytes": 1263
+    },
+    {
+      "name": "main.html",
+      "bytes": 88565
+    },
+    {
+      "name": "main.mjml",
+      "bytes": 23984
+    },
+    {
+      "name": "styles.css",
+      "bytes": 5620
+    }
+  ],
+  "examples": [
+    {
+      "id": "year-end-appeal",
+      "title": "Year-end appeal",
+      "file": "example-year-end-appeal.html"
+    },
+    {
+      "id": "welcome",
+      "title": "Welcome email",
+      "file": "example-welcome.html"
+    },
+    {
+      "id": "news-update",
+      "title": "News update",
+      "file": "example-news-update.html"
+    }
+  ]
+}

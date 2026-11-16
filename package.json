@@ -1,0 +1,20 @@
+{
+  "name": "glaad-en-marketing-tools",
+  "version": "1.0.0",
+  "description": "MJML source and EN Marketing Tools import files for GLAAD's Engaging Networks email template and blocks.",
+  "scripts": {
+    "build": "node scripts/build.mjs && node scripts/check-sync.mjs",
+    "export-en": "node scripts/build.mjs && node scripts/export-en.mjs && node scripts/build.mjs && node scripts/check-sync.mjs",
+    "check-sync": "node scripts/check-sync.mjs",
+    "preview": "npx --yes http-server . -p 8642 -c-1"
+  },
+  "author": "4Site Interactive Studios",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "mjml": "^5.2.2"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

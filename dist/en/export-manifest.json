@@ -1,0 +1,40 @@
+{
+  "note": "Written by npm run export-en. check-sync compares sourceHash with src/ to catch stale exports.",
+  "exportedAt": "2026-11-16T19:50:58.265Z",
+  "sourceHash": "e66c69c17e5576e0",
+  "assetRoot": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109",
+  "clientId": 10109,
+  "ownedBy": 0,
+  "folderId": 0,
+  "templateName": "GLAAD Email Template",
+  "importerCommit": "9687d0c",
+  "blocks": [
+    "Logo Header",
+    "CTA Header",
+    "Match Banner",
+    "Body Copy",
+    "Gift Amount Buttons 4x1",
+    "CTA Button",
+    "Signature (no photo)",
+    "Image (full width)",
+    "Image (indented)",
+    "Social Links",
+    "Footer"
+  ],
+  "uploadsFromExport": [
+    "glaad-placeholder.png",
+    "glaad-thumbnail-body-copy.png",
+    "glaad-thumbnail-cta-button.png",
+    "glaad-thumbnail-cta-header.png",
+    "glaad-thumbnail-footer.png",
+    "glaad-thumbnail-gift-amount-buttons-4x1.png",
+    "glaad-thumbnail-image-full-width.png",
+    "glaad-thumbnail-image-indented.png",
+    "glaad-thumbnail-logo-header.png",
+    "glaad-thumbnail-match-banner.png",
+    "glaad-thumbnail-raw-html.png",
+    "glaad-thumbnail-signature-no-photo.png",
+    "glaad-thumbnail-social-links.png",
+    "glaad-thumbnail-template-styles.png"
+  ]
+}

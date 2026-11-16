@@ -1,0 +1,1090 @@
+<!doctype html>
+<html lang="en" dir="auto" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <title>GLAAD example: News update</title>
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    #outlook a {
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    table,
+    td {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    p {
+      display: block;
+      margin: 13px 0;
+    }
+  </style>
+  <!--[if mso]>
+    <noscript>
+    <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    </noscript>
+    <![endif]-->
+  <!--[if lte mso 11]>
+    <style type="text/css">
+      .mj-outlook-group-fix { width:100% !important; }
+    </style>
+    <![endif]-->
+  <style type="text/css">
+    @media only screen and (min-width:600px) {
+      .mj-column-per-100 {
+        width: 100% !important;
+        max-width: 100%;
+      }
+    }
+  </style>
+  <style media="screen and (min-width:600px)">
+    .moz-text-html .mj-column-per-100 {
+      width: 100% !important;
+      max-width: 100%;
+    }
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width:599px) {
+      table.mj-full-width-mobile {
+        width: 100% !important;
+      }
+
+      td.mj-full-width-mobile {
+        width: auto !important;
+      }
+    }
+  </style>
+  <style type="text/css">
+    /* GLAAD template styles. Ships to EN as the Template Styles block, where
+   EN's inliner writes plain rules onto the elements at send (guide §2).
+   NO CHILD COMBINATORS anywhere in this file: EN escapes `>` to `&gt;` on
+   edit and the rule silently dies (guide §2d).
+
+   Dark mode follows TPL's measured model (guide §2c, TPL styles.css): the
+   light/dark SWAP lives in the template head; the REPAINTS below are design.
+   Two branches, every declaration !important (the base rules are inlined
+   onto the elements, guide §2b):
+   - the prefers-color-scheme dark media query: Apple Mail, iOS Mail and
+     friends.
+   - [data-ogsc] inside an always-true media query: Outlook.com / OWA and
+     Outlook for Mac. EN's inliner deletes it at top level (guide §2a), and
+     it only fires below the unclassed seed div at the top of mj-body.
+   Dark values clear Outlook.com's contrast test against its #333333 base
+   (text 5.4:1 with margin, grounds 4.5:1 against their text): white text,
+   Light Cyan #5DCBEB links (Cyan #00B2E3 is only ~5.1:1, so it would be
+   repainted), CTA Blue buttons with white labels. Gmail apps and Outlook
+   desktop run neither branch; they darken the email on their own. */
+    /* Type table (GLAAD's current email: Arial, 16px body at 150%). Line-heights
+   are absolute values per size, not a ratio. */
+    a {
+      color: #105BAB;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: 32px;
+      line-height: 40px;
+      mso-line-height-rule: exactly;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 30px;
+      mso-line-height-rule: exactly;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 24px;
+      mso-line-height-rule: exactly;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-size: 16px;
+      line-height: 24px;
+      mso-line-height-rule: exactly;
+    }
+
+    /* Headings on a dark band (Match Banner): the h rules above set black, so
+   the band's mj-text carries this hook. Paragraphs need none; they inherit
+   the mj-text color, which is the block's Text Color field. */
+    .text-inverse h1,
+    .text-inverse h2,
+    .text-inverse h3,
+    .text-inverse h4,
+    .text-inverse h5,
+    .text-inverse h6 {
+      color: #FFFFFF;
+    }
+
+    /* 16px between paragraphs, as in GLAAD's email (a browser-default 1em).
+   Stated explicitly because EN otherwise inlines its own 13px (guide §2). */
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 16px 0;
+      mso-line-height-rule: exactly;
+    }
+
+    /* Footer copy. A class on the mj-text, not inline styles in the copy:
+   EN's editor drops inline styles from RTE content on the first edit. */
+    .footer-text p,
+    .footer-text a {
+      font-size: 14px;
+      line-height: 18px;
+      mso-line-height-rule: exactly;
+    }
+
+    .footer-text p {
+      margin: 0 0 8px;
+    }
+
+    /* Link color hooks: the option pool for the importer's per-block Link
+   Color select (single-declaration `.link-* a` rules; sheet order is
+   dropdown order). The hook sits on the mj-text, outside the editable
+   content, because EN strips attributes from anchors on edit. */
+    .link-inverse a {
+      color: #FFFFFF;
+    }
+
+    .link-black a {
+      color: #000000;
+    }
+
+    /* Outlook.com dark mode. Wrapped in a conditional media query because EN's
+   inliner deletes top-level [data-ogsc] rules (guide §2a). */
+    @media only screen and (max-width: 9999px) {
+
+      [data-ogsc] .block,
+      [data-ogsc] .block table[align=center],
+      [data-ogsc] .spacer-block td {
+        background-color: #000000 !important;
+      }
+
+      [data-ogsc] a {
+        color: #5DCBEB !important;
+      }
+
+      [data-ogsc] .wysiwyg h1,
+      [data-ogsc] .wysiwyg h2,
+      [data-ogsc] .wysiwyg h3,
+      [data-ogsc] .wysiwyg h4,
+      [data-ogsc] .wysiwyg h5,
+      [data-ogsc] .wysiwyg h6,
+      [data-ogsc] .block h1,
+      [data-ogsc] .block h2,
+      [data-ogsc] .block h3,
+      [data-ogsc] .block h4,
+      [data-ogsc] .block h5,
+      [data-ogsc] .block h6,
+      [data-ogsc] .block p,
+      [data-ogsc] .block span,
+      [data-ogsc] .block li,
+      [data-ogsc] .block div {
+        color: #FFFFFF !important;
+      }
+
+      [data-ogsc] .email-ground {
+        color: #FFFFFF !important;
+        background-color: #000000 !important;
+      }
+
+      [data-ogsc] .button td,
+      [data-ogsc] .button a {
+        background-color: #0313C4 !important;
+        border-color: #0313C4 !important;
+        color: #FFFFFF !important;
+      }
+
+      /* Outlook.com dark paints white behind a hovered image (TPL, email-bugs
+     #162), which would flash a white box behind the transparent logo. */
+      [data-ogsc] img:hover {
+        background-color: transparent !important;
+      }
+    }
+
+    /* Apple Mail, iOS Mail and other clients that honour the media query. */
+    @media (prefers-color-scheme: dark) {
+
+      body,
+      .email-body,
+      .email-ground {
+        color: #FFFFFF !important;
+        background-color: #000000 !important;
+      }
+
+      a {
+        color: #5DCBEB !important;
+      }
+
+      .wysiwyg h1,
+      .wysiwyg h2,
+      .wysiwyg h3,
+      .wysiwyg h4,
+      .wysiwyg h5,
+      .wysiwyg h6 {
+        color: #FFFFFF !important;
+      }
+
+      /* table[align=center] = a section's outer table, which carries the
+     authored background inline (no child combinator, guide §2d). */
+      .block,
+      .block table[align=center],
+      .spacer-block td {
+        background-color: #000000 !important;
+      }
+
+      /* Copy authored dark on white would vanish on black. mj-text compiles to
+     a div carrying inline color, so `.block div` reaches bare copy too. */
+      .block h1,
+      .block h2,
+      .block h3,
+      .block h4,
+      .block h5,
+      .block h6,
+      .block p,
+      .block span,
+      .block li,
+      .block div {
+        color: #FFFFFF !important;
+      }
+
+      /* Buttons stay CTA Blue with white labels; without this the `a` rule
+     above would turn every label Light Cyan on blue. */
+      .button td,
+      .button a {
+        background-color: #0313C4 !important;
+        border-color: #0313C4 !important;
+        color: #FFFFFF !important;
+      }
+    }
+  </style>
+  <!-- en-tools-config {
+      "spacingScale": { "None": 0, "X-Small": 10, "Small": 20, "Medium": 30, "Large": 40, "X-Large": 60 },
+      "widthPresets": { "Full Bleed": 0, "X-Small": 10, "Small": 20, "Medium": 30, "Large": 40, "X-Large": 60 },
+      "geometryReachPx": 60,
+      "assetPrefix": "glaad-",
+      "brandColors": { "Cyan": "#00B2E3", "Light Cyan": "#5DCBEB", "Azure": "#008DD0", "Blue": "#105BAB", "Navy": "#0B4280", "CTA Blue": "#0313C4", "Near Black": "#111111", "Charcoal": "#454545", "Light Gray": "#DEDEDE" }
+    } -->
+  <!-- GLAAD's live email sits on a 10px grid (15/20/30/10px), so the scale
+         is declared on tens rather than TPL's sixteens. The content baseline
+         is Medium (30px), the gutter GLAAD's current template uses. The brand
+         colors are sampled from Glaad_Cyan_email_200.png plus the footer,
+         body-text and page grays of the live email, and CTA Blue from the
+         live email's own Outlook CTA rule (.msCta); the NAMES are ours, not
+         GLAAD's — swap in their brand-guide names if they have them.
+         assetPrefix: every file uploaded to GLAAD's shared EN image folder
+         starts with glaad-. Our own images are named that way in
+         src/assets/; the importer adds it to the thumbnails and placeholder
+         it names (conventions.md, en-tools-config). -->
+  <!-- No mj-preview: EN injects its own hidden preheader from each email's
+         Preview Text setting (guide §2); a baked-in one would double up. -->
+  <!-- Version stamp + meta run (guide §2f, TPL CLAUDE.md "Versioning").
+         Without a versions.json beside src/, the importer collapses both
+         placeholders and the stamp reads "GLAAD Email Template". -->
+  <!-- en-tools-keep GLAAD Email Template (__TEMPLATE_DATE__) v__TEMPLATE_VERSION__ -->
+  <meta name="color-scheme" content="light dark" />
+  <meta name="supported-color-schemes" content="light dark" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- Head-resident MECHANISM CSS, copied from TPL main.mjml (which carries
+         the full measured rationale). It lives in the template head, not in
+         styles.css, because styles.css ships as the Template Styles BLOCK: an
+         email built without that block would otherwise lose the swap and
+         render BOTH halves of every light/dark pair. The dark REPAINTS stay in
+         styles.css. The [data-ogsc] reveal sits in an always-true media query
+         because EN's inliner deletes top-level [data-ogsc] rules (guide §2a). -->
+  <style type="text/css" data-en-tools-template-css>
+    .wysiwyg div p:first-child,
+    .wysiwyg div h1:first-child,
+    .wysiwyg div h2:first-child,
+    .wysiwyg div h3:first-child,
+    .wysiwyg div h4:first-child,
+    .wysiwyg div h5:first-child,
+    .wysiwyg div h6:first-child,
+    .wysiwyg div ul:first-child,
+    .wysiwyg div ol:first-child {
+      margin-top: 0;
+    }
+
+    .wysiwyg div p:last-child,
+    .wysiwyg div h1:last-child,
+    .wysiwyg div h2:last-child,
+    .wysiwyg div h3:last-child,
+    .wysiwyg div h4:last-child,
+    .wysiwyg div h5:last-child,
+    .wysiwyg div h6:last-child,
+    .wysiwyg div ul:last-child,
+    .wysiwyg div ol:last-child {
+      margin-bottom: 0;
+    }
+
+    .dark-only {
+      display: none;
+    }
+
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+
+    @media only screen and (max-width: 9999px) {
+      [data-ogsc] .dark-only {
+        display: block !important;
+      }
+
+      [data-ogsc] .light-only {
+        display: none !important;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .light-only {
+        display: none !important;
+      }
+
+      .dark-only {
+        display: block !important;
+      }
+    }
+  </style>
+  <!-- Marketing Tools builder bands: editor chrome, never seen in an inbox.
+         Copied from TPL main.mjml, which documents why the two rules stay
+         separate and why the container merge tag must never be written
+         literally in this file. -->
+  <style type="text/css" data-en-tools-band>
+    div[data-container] {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    [data-container="main"]:before {
+      content: "Email Template v__TEMPLATE_VERSION__";
+      display: block !important;
+      font-weight: 700 !important;
+      font-family: sans-serif !important;
+      color: #4e535c !important;
+      line-height: 1.75rem !important;
+      text-align: center !important;
+      margin-bottom: 2rem !important;
+      background-color: #d0d5dd !important;
+    }
+
+    :is(body):has(.en__emailbuilder__block) .marketing-tools-banner {
+      display: flex !important;
+      font-weight: 700 !important;
+      font-family: sans-serif !important;
+      color: #4e535c !important;
+      line-height: 2rem !important;
+      top: 1.75rem !important;
+      width: 100% !important;
+      max-width: 600px !important;
+      justify-content: center !important;
+      background-color: #d0d5dd !important;
+    }
+
+    :is(body):has(.en__emailbuilder__block) #head-styles {
+      position: absolute !important;
+    }
+  </style>
+</head>
+
+<body class="email-body" style="word-spacing:normal;background-color:#DEDEDE;">
+  <div aria-label="GLAAD example: News update" aria-roledescription="email" role="article" lang="en" dir="auto" style="word-spacing:normal;background-color:#DEDEDE;">
+    <!-- Outlook dark-mode seed (guide §2c, TPL styles.css "ARMING"). Outlook.com
+         only applies [data-ogsc] rules below an element it has repainted; the
+         unclassed outer div's inline black text guarantees that. No class,
+         and no CSS may target it. .email-ground is the classed ground both
+         dark branches paint. Light values match the page gray. -->
+    <div style="color:#000000;background-color:#DEDEDE;margin:0;padding:0;">
+      <div class="email-ground" style="background-color:#DEDEDE;margin:0;padding:0;"><!-- START: Main Content --><!-- START: Logo Header --><!-- Single member, so the section padding is the only pacing control
+         (guide §5, sole-member consolidation). data-no-width-toggle: the logo
+         is a fixed 200px centered image, so a gutter control would do nothing. -->
+        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="image-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="image-block block" style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:20px 30px 0;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:540px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                              <tbody>
+                                <tr>
+                                  <td style="width:200px;">
+                                    <a href="https://www.glaad.org/" target="_blank">
+                                      <img alt="GLAAD" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-logo-cyan-transparent.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="200" height="auto" />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="spacer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="spacer-block block" style="margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td style="background:#FFFFFF;font-size:0px;word-break:break-word;">
+                            <div style="height:40px;line-height:40px;">&#8202;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><![endif]-->
+        <!-- END: Logo Header --><!-- START: Image (full width) --><!-- Two image blocks rather than one with an indent control: an image
+         sized to fill its column has its width baked into the compiled HTML,
+         so the importer withholds every gutter above the authored one (it
+         would overflow in Outlook). The placeholder art is 1200x600 for
+         retina and must be uploaded to GLAAD's EN image library first.
+         data-no-background-color: the photo covers the whole section, so a
+         background field could never change a pixel (Inert Audit FAIL,
+         2026-11-16). The white stays as a fallback behind a loading image. -->
+        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="image-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="image-block block" style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                              <tbody>
+                                <tr>
+                                  <td style="width:600px;">
+                                    <a href="https://www.glaad.org/" target="_blank">
+                                      <img alt="Replace with a description of the image" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-image-placeholder.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="600" height="auto" />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="spacer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="spacer-block block" style="margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td style="background:#FFFFFF;font-size:0px;word-break:break-word;">
+                            <div style="height:30px;line-height:30px;">&#8202;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><![endif]-->
+        <!-- END: Image (full width) --><!-- START: Body Copy -->
+        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="text-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="text-block block" style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0 30px;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:540px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="left" class="wysiwyg" style="font-size:0px;padding:0;word-break:break-word;">
+                            <div style="font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:left;color:#000000;">
+                              <h2>This month at GLAAD</h2>
+                              <p>Here's a quick look at the work your support makes possible: holding the media accountable for fair and accurate coverage, celebrating LGBTQ stories, and showing up wherever acceptance is on the line.</p>
+                              <p>Read the full update for the stories behind this month's work.</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="spacer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="spacer-block block" style="margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td style="background:#FFFFFF;font-size:0px;word-break:break-word;">
+                            <div style="height:30px;line-height:30px;">&#8202;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><![endif]-->
+        <!-- END: Body Copy --><!-- START: CTA Button --><!-- data-no-width-toggle: a centered, content-sized button cannot be moved
+         by a symmetric gutter, so Block Padding Left/Right would be dead at
+         both viewports (TPL CTA Buttons 3x1, inert audit 2026-08-24). -->
+        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="button-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="button-block block" style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0 30px;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:540px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" class="button" style="font-size:0px;padding:0;word-break:break-word;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;width:auto;line-height:100%;">
+                              <tbody>
+                                <tr>
+                                  <td align="center" bgcolor="#0313C4" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 30px;background:#0313C4;" valign="middle">
+                                    <a href="https://glaad.org/" style="display:inline-block;background:#0313C4;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:700;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 30px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> READ THE UPDATE </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="spacer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="spacer-block block" style="margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td style="background:#FFFFFF;font-size:0px;word-break:break-word;">
+                            <div style="height:30px;line-height:30px;">&#8202;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><![endif]-->
+        <!-- END: CTA Button --><!-- START: Image (indented) --><!-- Indented to the copy's 30px baseline: 600 - 2 x 30 = 540px. -->
+        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="image-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="image-block block" style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0 30px;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:540px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                              <tbody>
+                                <tr>
+                                  <td style="width:540px;">
+                                    <a href="https://www.glaad.org/" target="_blank">
+                                      <img alt="Replace with a description of the image" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-image-placeholder.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="540" height="auto" />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="spacer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="spacer-block block" style="margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td style="background:#FFFFFF;font-size:0px;word-break:break-word;">
+                            <div style="height:30px;line-height:30px;">&#8202;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><![endif]-->
+        <!-- END: Image (indented) --><!-- START: Body Copy -->
+        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="text-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="text-block block" style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0 30px;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:540px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="left" class="wysiwyg" style="font-size:0px;padding:0;word-break:break-word;">
+                            <div style="font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:left;color:#000000;">
+                              <h3>Stay connected</h3>
+                              <p>Share this update with a friend, and follow GLAAD on social media for news as it happens.</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="spacer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="spacer-block block" style="margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td style="background:#FFFFFF;font-size:0px;word-break:break-word;">
+                            <div style="height:30px;line-height:30px;">&#8202;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><![endif]-->
+        <!-- END: Body Copy --><!-- START: Social Links --><!-- Light/dark icon twins (guide §2c, TPL's mj-image pattern applied to
+         mj-social): black glyphs in light mode, white glyphs where a client
+         honours the swap. The dark twin sits in a downlevel-revealed
+         [if !mso] pair so Outlook desktop never renders it; the plain
+         .dark-only hide in the template head covers everyone else. Gmail
+         apps and Outlook desktop cannot run the swap, so they keep the
+         black icons on whatever ground they darken to, so the black icons
+         carry a 1px white halo: invisible on the white block, an outline on
+         any ground a client darkens to (Dark Audit "bg-dependent-ink",
+         2026-11-16). Icons are 36px canvases (32px glyph + halo room), so
+         inner-padding is 3px to keep GLAAD's 42px icon pitch. -->
+        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="social-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="social-block block" style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0 30px;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:540px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" class="wysiwyg" style="font-size:0px;padding:0 0 10px;word-break:break-word;">
+                            <div style="font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:center;color:#000000;">
+                              <h3>Follow Us!</h3>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="light-only" style="font-size:0px;padding:0;word-break:break-word;">
+                            <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td><![endif]-->
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                              <tbody>
+                                <tr>
+                                  <td style="padding:3px;vertical-align:middle;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-radius:3px;width:36px;">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;">
+                                            <a href="https://www.facebook.com/GLAAD/" target="_blank">
+                                              <img alt="Facebook" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-facebook-black.png" style="border:0;border-radius:3px;display:block;" width="36" />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!--[if mso | IE]></td><td><![endif]-->
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                              <tbody>
+                                <tr>
+                                  <td style="padding:3px;vertical-align:middle;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-radius:3px;width:36px;">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;">
+                                            <a href="https://twitter.com/glaad" target="_blank">
+                                              <img alt="Twitter" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-twitter-black.png" style="border:0;border-radius:3px;display:block;" width="36" />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!--[if mso | IE]></td><td><![endif]-->
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                              <tbody>
+                                <tr>
+                                  <td style="padding:3px;vertical-align:middle;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-radius:3px;width:36px;">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;">
+                                            <a href="https://www.instagram.com/glaad/" target="_blank">
+                                              <img alt="Instagram" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-instagram-black.png" style="border:0;border-radius:3px;display:block;" width="36" />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!--[if mso | IE]></td><td><![endif]-->
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                              <tbody>
+                                <tr>
+                                  <td style="padding:3px;vertical-align:middle;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-radius:3px;width:36px;">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;">
+                                            <a href="https://www.youtube.com/channel/UCZmLgxP2N3Vj0XaQtohLT-A" target="_blank">
+                                              <img alt="YouTube" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-youtube-black.png" style="border:0;border-radius:3px;display:block;" width="36" />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!--[if mso | IE]></td></tr></table><![endif]-->
+                          </td>
+                        </tr>
+                        <!--[if !mso]><!-->
+                        <tr>
+                          <td align="center" class="dark-only" style="font-size:0px;padding:0;word-break:break-word;"><!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td><![endif]-->
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                              <tbody>
+                                <tr>
+                                  <td style="padding:3px;vertical-align:middle;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-radius:3px;width:36px;">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;">
+                                            <a href="https://www.facebook.com/GLAAD/" target="_blank">
+                                              <img alt="Facebook" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-facebook-white.png" style="border:0;border-radius:3px;display:block;" width="36" />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!--[if mso | IE]></td><td><![endif]-->
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                              <tbody>
+                                <tr>
+                                  <td style="padding:3px;vertical-align:middle;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-radius:3px;width:36px;">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;">
+                                            <a href="https://twitter.com/glaad" target="_blank">
+                                              <img alt="Twitter" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-twitter-white.png" style="border:0;border-radius:3px;display:block;" width="36" />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!--[if mso | IE]></td><td><![endif]-->
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                              <tbody>
+                                <tr>
+                                  <td style="padding:3px;vertical-align:middle;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-radius:3px;width:36px;">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;">
+                                            <a href="https://www.instagram.com/glaad/" target="_blank">
+                                              <img alt="Instagram" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-instagram-white.png" style="border:0;border-radius:3px;display:block;" width="36" />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!--[if mso | IE]></td><td><![endif]-->
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                              <tbody>
+                                <tr>
+                                  <td style="padding:3px;vertical-align:middle;">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-radius:3px;width:36px;">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;">
+                                            <a href="https://www.youtube.com/channel/UCZmLgxP2N3Vj0XaQtohLT-A" target="_blank">
+                                              <img alt="YouTube" src="https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-youtube-white.png" style="border:0;border-radius:3px;display:block;" width="36" />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!--[if mso | IE]></td></tr></table><![endif]-->
+                          </td>
+                        </tr>
+                        <!--<![endif]-->
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="spacer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="spacer-block block" style="margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td style="background:#FFFFFF;font-size:0px;word-break:break-word;">
+                            <div style="height:30px;line-height:30px;">&#8202;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><![endif]-->
+        <!-- END: Social Links --><!-- START: Footer --><!-- The unsubscribe href is a PLACEHOLDER. EN builds the real link with
+         the editor's "Insert unsubscribe link" tool (an opt-in question plus
+         a subscription page), so it has to be inserted in EN, in this block's
+         Content field, before any broadcast goes out. -->
+        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="footer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#111111" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="footer-block block" style="background:#111111;background-color:#111111;margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#111111;background-color:#111111;width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:30px 30px;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:540px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center" class="wysiwyg footer-text link-inverse" style="font-size:0px;padding:0;word-break:break-word;">
+                            <div style="font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:center;color:#FFFFFF;">
+                              <p>GLAAD &copy; All rights reserved.</p>
+                              <p>GLAAD, 104 W 29th St, 4th Floor, New York, NY 10001</p>
+                              <p><a href="https://www.glaad.org/unsubscribe-link-placeholder">Unsubscribe</a></p>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="spacer-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div class="spacer-block block" style="margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+            <tbody>
+              <tr>
+                <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+                  <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+                  <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                      <tbody>
+                        <tr>
+                          <td style="font-size:0px;word-break:break-word;">
+                            <div style="height:0px;line-height:0px;">&#8202;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso | IE]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><![endif]-->
+        <!-- END: Footer --><!-- END: Main Content -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

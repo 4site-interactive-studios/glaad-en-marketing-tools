@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GLAAD Email Template · EN Marketing Tools</title>
+  <!--
+    GitHub Pages preview for this repo. Static on purpose: everything it lists
+    is read from the generated files (dist/files.json, dist/en/*.json), so it
+    stays in step with src/ through npm run build and npm run export-en.
+    Edit this page by hand only for layout or copy; check-sync verifies every
+    path it names still exists.
+  -->
+  <style>
+    :root {
+      --navy: #0B4280;
+      --cta: #0313C4;
+      --ink: #111111;
+      --muted: #545454;
+      --line: #D9D9D9;
+      --panel: #F4F5F7;
+      --page: #FFFFFF;
+      color-scheme: light;
+    }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body {
+      margin: 0;
+      font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--page);
+    }
+    a { color: var(--cta); }
+    header {
+      background: var(--navy);
+      color: #FFFFFF;
+      padding: 32px 24px 28px;
+    }
+    header .wrap, main { max-width: 1240px; margin: 0 auto; }
+    header h1 { margin: 0 0 4px; font-size: 28px; line-height: 1.2; }
+    header p { margin: 0; color: #DCE6F2; }
+    header .meta { margin-top: 12px; font-size: 14px; color: #B9CDE4; }
+    main { padding: 24px; }
+    h2 { font-size: 20px; margin: 0 0 12px; }
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: 32px;
+      align-items: start;
+    }
+    @media (max-width: 1000px) { .layout { grid-template-columns: 1fr; } }
+
+    .controls { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 12px; }
+    .control { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); }
+    .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+    .seg button {
+      font: inherit; font-size: 14px; color: var(--ink);
+      background: #FFFFFF; border: 0; padding: 6px 12px; cursor: pointer;
+    }
+    .seg button + button { border-left: 1px solid var(--line); }
+    .seg button[aria-pressed="true"] { background: var(--cta); color: #FFFFFF; }
+    .seg button:focus-visible { outline: 3px solid #5DCBEB; outline-offset: -3px; }
+    .note { font-size: 14px; color: var(--muted); margin: 0 0 12px; min-height: 21px; }
+
+    .stage {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+    }
+    .stage iframe {
+      border: 0;
+      width: 100%;
+      max-width: 720px;
+      height: 900px;
+      background: #FFFFFF;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+      transition: max-width 0.2s ease;
+    }
+    .stage.phone iframe { max-width: 375px; }
+
+    aside section {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin-bottom: 20px;
+    }
+    aside h2 { font-size: 17px; }
+    aside ol, aside ul { margin: 0; padding-left: 20px; }
+    aside li { margin-bottom: 6px; }
+    .files { list-style: none; padding: 0; margin: 0; }
+    .files li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-top: 1px solid var(--line); font-size: 14px; }
+    .files li:first-child { border-top: 0; }
+    .files .what { color: var(--muted); text-align: right; }
+    .files .name { display: flex; align-items: baseline; gap: 8px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .btn {
+      display: inline-block; font: inherit; font-size: 14px; font-weight: 600;
+      color: #FFFFFF; background: var(--cta); border: 0; border-radius: 3px;
+      padding: 8px 14px; cursor: pointer; text-decoration: none;
+    }
+    .btn:disabled { opacity: 0.6; cursor: progress; }
+    details { margin-top: 10px; font-size: 14px; }
+    details ul { columns: 2; column-gap: 16px; padding-left: 18px; }
+    details li { break-inside: avoid; margin-bottom: 2px; }
+
+    .blocks { margin-top: 40px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    figure { margin: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #FFFFFF; }
+    figure img { display: block; width: 100%; height: 170px; object-fit: contain; object-position: top; background: var(--panel); border-bottom: 1px solid var(--line); }
+    figcaption { padding: 10px 12px; font-size: 14px; }
+    figcaption strong { display: block; font-size: 15px; }
+    figcaption span { color: var(--muted); }
+    footer { max-width: 1240px; margin: 40px auto 0; padding: 16px 24px 32px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>GLAAD email template</h1>
+      <p>A draft by 4Site Studios for GLAAD's review: preview the template and its blocks, and download everything needed to set it up in Engaging Networks (EN) Marketing Tools.</p>
+      <p class="meta" id="meta">Loading export details…</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="layout">
+      <section aria-labelledby="preview-h">
+        <h2 id="preview-h">Preview</h2>
+        <p class="note">Example emails built from the template's blocks. Every block is listed under Blocks below.</p>
+        <div class="controls">
+          <div class="control">Email
+            <span class="seg" data-key="example" id="example-seg"></span>
+          </div>
+          <div class="control">Width
+            <span class="seg" data-key="width">
+              <button type="button" data-value="desktop" aria-pressed="true">Desktop</button>
+              <button type="button" data-value="phone" aria-pressed="false">Phone</button>
+            </span>
+          </div>
+          <div class="control">Mode
+            <span class="seg" data-key="mode">
+              <button type="button" data-value="light" aria-pressed="true">Light</button>
+              <button type="button" data-value="dark" aria-pressed="false">Dark</button>
+            </span>
+          </div>
+          <div class="control" id="images-control">Images
+            <span class="seg" data-key="images">
+              <button type="button" data-value="local" aria-pressed="true">In this repo</button>
+              <button type="button" data-value="en" aria-pressed="false">From EN</button>
+            </span>
+          </div>
+        </div>
+        <p class="note" id="note" aria-live="polite"></p>
+        <div class="stage" id="stage">
+          <iframe id="frame" title="GLAAD email template preview" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+        </div>
+      </section>
+
+      <aside>
+        <section aria-labelledby="setup-h">
+          <h2 id="setup-h">Set it up in EN</h2>
+          <ol>
+            <li>Download the <a href="#upload-files">upload files</a> and add them to GLAAD's EN image library.</li>
+            <li>In EN Marketing Tools, import the <a href="dist/en/en-template-import.json" download>template file</a> and the <a href="dist/en/en-blocks-import.json" download>blocks file</a>.</li>
+            <li>Build emails from the blocks.</li>
+          </ol>
+        </section>
+
+        <section aria-labelledby="files-h">
+          <h2 id="files-h">Files</h2>
+          <ul class="files">
+            <li><span class="name"><a href="dist/en/en-template-import.json" download>en-template-import.json</a></span><span class="what">EN template import</span></li>
+            <li><span class="name"><a href="dist/en/en-blocks-import.json" download>en-blocks-import.json</a></span><span class="what">EN block import</span></li>
+          </ul>
+          <div class="actions">
+            <button type="button" class="btn" id="zip-all">Download everything (ZIP)</button>
+          </div>
+          <p class="note" id="files-status" aria-live="polite"></p>
+        </section>
+
+        <section aria-labelledby="upload-files">
+          <h2 id="upload-files">Upload files</h2>
+          <p class="note" id="upload-summary">Loading…</p>
+          <button type="button" class="btn" id="zip">Download upload files (ZIP)</button>
+          <details>
+            <summary>Show each file</summary>
+            <ul id="upload-list"></ul>
+          </details>
+        </section>
+
+        <section aria-labelledby="before-h">
+          <h2 id="before-h">Before the first send</h2>
+          <ul>
+            <li>Replace the footer's placeholder Unsubscribe link using EN's "Insert unsubscribe link" tool.</li>
+            <li>The import files use a placeholder owner (0) until we have GLAAD's EN owner ID.</li>
+            <li>Send a test and check Outlook, Gmail and Apple Mail, light and dark, on desktop and phone.</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+
+    <section class="blocks" aria-labelledby="blocks-h">
+      <h2 id="blocks-h">Blocks</h2>
+      <p class="note" id="blocks-summary">Loading…</p>
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    Prepared by 4Site Studios. Source and full instructions:
+    <a href="https://github.com/4site-interactive-studios/glaad-en-marketing-tools">github.com/4site-interactive-studios/glaad-en-marketing-tools</a>.
+  </footer>
+
+  <script>
+    const PATHS = {
+      html: { local: 'dist/local/', en: 'dist/en/' },
+      blocks: 'dist/en/en-blocks-import.json',
+      manifest: 'dist/en/export-manifest.json',
+      files: 'dist/files.json',
+      upload: 'upload/',
+    };
+    // example: the HTML file of the example email on show (dist/files.json
+    // lists them; the first is the default). main.html is only a fallback.
+    const state = { width: 'desktop', mode: 'light', images: 'local', example: 'main.html' };
+    const $ = (id) => document.getElementById(id);
+    const getJson = async (path) => {
+      const res = await fetch(path, { cache: 'no-cache' });
+      if (!res.ok) throw new Error(`${path}: ${res.status}`);
+      return res.json();
+    };
+    const kb = (bytes) => (bytes < 1024 ? `${bytes} B` : `${Math.round(bytes / 1024)} KB`);
+
+    // Preview. The email is fetched and shown through srcdoc so its color
+    // scheme can be FORCED: the dark rules are switched on or off by
+    // rewriting their media query, whatever the viewer's own OS setting.
+    const NOTES = {
+      dark: 'Dark mode as Apple Mail and iOS Mail show it. Gmail apps and Outlook desktop darken emails their own way.',
+      en: 'Images load from GLAAD\'s EN image folder, so they show as broken until the upload files are added there.',
+    };
+    // Local images are embedded as data: URIs, so the preview never depends on
+    // how (or whether) a host resolves relative paths inside the frame: a
+    // Claude artifact allows data: images everywhere.
+    const dataUris = new Map();
+    async function inlineImages(html, dir) {
+      const srcs = [...new Set([...html.matchAll(/\ssrc="([^"]+)"/g)].map((m) => m[1]))]
+        .filter((u) => !/^(?:data:|https?:|\/\/)/i.test(u));
+      await Promise.all(srcs.map(async (u) => {
+        const key = dir + u;
+        if (!dataUris.has(key)) {
+          const res = await fetch(key, { cache: 'no-cache' });
+          if (!res.ok) return;
+          const blob = await res.blob();
+          dataUris.set(key, await new Promise((ok) => {
+            const r = new FileReader();
+            r.onload = () => ok(r.result);
+            r.readAsDataURL(blob);
+          }));
+        }
+      }));
+      return html.replace(/(\ssrc=")([^"]+)(")/g, (m, a, u, b) => (dataUris.has(dir + u) ? a + dataUris.get(dir + u) + b : m));
+    }
+
+    async function renderPreview() {
+      const dir = PATHS.html[state.images];
+      const frame = $('frame');
+      $('stage').classList.toggle('phone', state.width === 'phone');
+      $('note').textContent = [state.mode === 'dark' && NOTES.dark, state.images === 'en' && NOTES.en].filter(Boolean).join(' ');
+      try {
+        const res = await fetch(`${dir}${state.example}`, { cache: 'no-cache' });
+        let html = await res.text();
+        // Hosts that inject their own scripts or a security policy into served
+        // HTML (a Claude artifact may) must not reach the preview.
+        html = html
+          .replace(/<script\b[\s\S]*?<\/script>/gi, '')
+          .replace(/<meta\b[^>]*http-equiv=["']?content-security-policy[^>]*>/gi, '');
+        html = html.replace(/@media\s*\(prefers-color-scheme:\s*dark\)/g, state.mode === 'dark' ? '@media all' : '@media not all');
+        html = await inlineImages(html, dir);
+        const base = `<base href="${new URL(dir, location.href).href}" target="_blank">`;
+        html = html.replace(/<head([^>]*)>/i, `<head$1>${base}`);
+        frame.style.colorScheme = state.mode;
+        frame.srcdoc = html;
+      } catch (err) {
+        $('note').textContent = `Could not load the preview (${err.message}).`;
+      }
+    }
+    // Grow the frame to the email's height, including late-loading images.
+    // Measured on the body: the document's scrollHeight never drops below the
+    // frame's current height, so it could only ever grow.
+    $('frame').addEventListener('load', () => {
+      const frame = $('frame');
+      const doc = frame.contentDocument;
+      if (!doc || !doc.body) return;
+      const fit = () => {
+        if (frame.contentDocument !== doc) return; // a previous preview, already replaced
+        frame.style.height = `${Math.ceil(doc.body.getBoundingClientRect().height)}px`;
+      };
+      fit();
+      new ResizeObserver(fit).observe(doc.body);
+      doc.querySelectorAll('img').forEach((img) => img.addEventListener('load', fit));
+    });
+    document.querySelectorAll('.seg').forEach((seg) => {
+      seg.addEventListener('click', (e) => {
+        const btn = e.target.closest('button');
+        if (!btn) return;
+        state[seg.dataset.key] = btn.dataset.value;
+        seg.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+        renderPreview();
+      });
+    });
+
+    // Export details, from the manifest npm run export-en writes.
+    getJson(PATHS.manifest).then((m) => {
+      const when = new Date(m.exportedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      const owner = m.ownedBy === 0 ? 'owner 0 (placeholder)' : `owner ${m.ownedBy}`;
+      const folder = m.folderId === 0 ? 'root folder' : `folder ${m.folderId}`;
+      $('meta').textContent = `Exported ${when} for EN client ${m.clientId}, ${owner}, ${folder}.`;
+    }).catch(() => { $('meta').textContent = ''; });
+
+    // Blocks, from the EN block import itself: name, thumbnail, field count.
+    getJson(PATHS.blocks).then((blocks) => {
+      const grid = $('grid');
+      let own = 0;
+      for (const b of blocks) {
+        const utility = b.name.startsWith('Utility — ');
+        if (!utility) own += 1;
+        const fields = Object.keys((typeof b.data === 'string' ? JSON.parse(b.data) : b.data)?.replacements ?? {}).length;
+        const fig = document.createElement('figure');
+        const img = document.createElement('img');
+        img.src = PATHS.upload + String(b.thumbnail || '').split('/').pop();
+        img.alt = '';
+        img.loading = 'lazy';
+        const cap = document.createElement('figcaption');
+        const name = document.createElement('strong');
+        name.textContent = b.name;
+        const detail = document.createElement('span');
+        detail.textContent = utility ? 'Added by the importer' : `${fields} editable field${fields === 1 ? '' : 's'}`;
+        cap.append(name, detail);
+        fig.append(img, cap);
+        grid.append(fig);
+      }
+      $('blocks-summary').textContent = `${own} GLAAD blocks, plus ${blocks.length - own} utility blocks the importer adds. Each thumbnail is what editors see in EN's block list.`;
+    }).catch((err) => { $('blocks-summary').textContent = `Could not load the blocks (${err.message}).`; });
+
+    // Upload files, from dist/files.json (written by npm run build).
+    let uploads = [];
+    let fileLists = { local: [], en: [], uploads: [] };
+    getJson(PATHS.files).then((f) => {
+      uploads = f.uploads;
+      fileLists = { local: f.local ?? [], en: f.en ?? [], uploads: f.uploads };
+      // Example emails: one button each in the Email switch, and their HTML
+      // (EN image paths) in the Files list.
+      const examples = f.examples ?? [];
+      const seg = $('example-seg');
+      const fileList = document.querySelector('.files');
+      examples.forEach((ex, i) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.dataset.value = ex.file;
+        btn.textContent = ex.title;
+        btn.setAttribute('aria-pressed', String(i === 0));
+        seg.append(btn);
+        const li = document.createElement('li');
+        const name = document.createElement('span');
+        name.className = 'name';
+        const a = document.createElement('a');
+        a.href = `${PATHS.html.en}${ex.file}`;
+        a.download = ex.file;
+        a.textContent = ex.file;
+        name.append(a);
+        const what = document.createElement('span');
+        what.className = 'what';
+        what.textContent = `${ex.title} (HTML)`;
+        li.append(name, what);
+        fileList.append(li);
+      });
+      if (examples.length) state.example = examples[0].file;
+      renderPreview();
+      const total = uploads.reduce((s, u) => s + u.bytes, 0);
+      $('upload-summary').textContent = `${uploads.length} files, ${kb(total)}: the template's images plus a thumbnail for each block.`;
+      const list = $('upload-list');
+      for (const u of uploads) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = PATHS.upload + u.name;
+        a.download = u.name;
+        a.textContent = u.name;
+        li.append(a);
+        list.append(li);
+      }
+    }).catch((err) => {
+      $('upload-summary').textContent = `Could not load the file list (${err.message}).`;
+      renderPreview();
+    });
+
+    // A store-only ZIP (no compression: the PNGs are compressed already).
+    const CRC = (() => {
+      const t = new Uint32Array(256);
+      for (let n = 0; n < 256; n++) {
+        let c = n;
+        for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1;
+        t[n] = c >>> 0;
+      }
+      return t;
+    })();
+    const crc32 = (u8) => {
+      let c = 0xFFFFFFFF;
+      for (let i = 0; i < u8.length; i++) c = CRC[(c ^ u8[i]) & 0xFF] ^ (c >>> 8);
+      return (c ^ 0xFFFFFFFF) >>> 0;
+    };
+    function makeZip(files) {
+      const enc = new TextEncoder();
+      const parts = [];
+      const central = [];
+      let offset = 0;
+      for (const f of files) {
+        const name = enc.encode(f.name);
+        const crc = crc32(f.data);
+        const size = f.data.length;
+        const local = new DataView(new ArrayBuffer(30));
+        local.setUint32(0, 0x04034b50, true);
+        local.setUint16(4, 20, true);
+        local.setUint16(12, 0x21, true); // 1980-01-01
+        local.setUint32(14, crc, true);
+        local.setUint32(18, size, true);
+        local.setUint32(22, size, true);
+        local.setUint16(26, name.length, true);
+        parts.push(new Uint8Array(local.buffer), name, f.data);
+        const cd = new DataView(new ArrayBuffer(46));
+        cd.setUint32(0, 0x02014b50, true);
+        cd.setUint16(4, 20, true);
+        cd.setUint16(6, 20, true);
+        cd.setUint16(14, 0x21, true);
+        cd.setUint32(16, crc, true);
+        cd.setUint32(20, size, true);
+        cd.setUint32(24, size, true);
+        cd.setUint16(28, name.length, true);
+        cd.setUint32(42, offset, true);
+        central.push(new Uint8Array(cd.buffer), name);
+        offset += 30 + name.length + size;
+      }
+      const cdSize = central.reduce((s, p) => s + p.length, 0);
+      const end = new DataView(new ArrayBuffer(22));
+      end.setUint32(0, 0x06054b50, true);
+      end.setUint16(8, files.length, true);
+      end.setUint16(10, files.length, true);
+      end.setUint32(12, cdSize, true);
+      end.setUint32(16, offset, true);
+      return new Blob([...parts, ...central, new Uint8Array(end.buffer)], { type: 'application/zip' });
+    }
+    // Saving files. Inside a Claude artifact the page cannot start a download
+    // itself, so it asks the viewer through the artifact's `downloads`
+    // capability (the viewer confirms each file). On GitHub Pages or a local
+    // server there is no such capability and a normal browser download runs.
+    const inArtifact = typeof window.claude?.use === 'function';
+    let downloadsApi;
+    const getDownloads = async () => {
+      if (downloadsApi === undefined) downloadsApi = inArtifact ? await window.claude.use('downloads').catch(() => null) : null;
+      return downloadsApi;
+    };
+    const status = (text) => { $('files-status').textContent = text; };
+    async function saveFile(name, blob) {
+      const api = await getDownloads();
+      if (api) {
+        try {
+          await api.save({ filename: name, data: blob });
+          return true;
+        } catch (err) {
+          if (err?.code === 'declined') return false;
+          if (err?.code === 'rejected_extension') {
+            status(`This viewer cannot save .${name.split('.').pop()} files. Use Download everything (ZIP).`);
+            return false;
+          }
+          throw new Error(err?.message || err?.code || 'save failed');
+        }
+      }
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = name;
+      a.dataset.direct = 'yes'; // the click interceptor below must let this one through
+      document.body.append(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 10000);
+      return true;
+    }
+    // The Claude artifact host cannot serve .mjml files, so its copy of this
+    // page carries main.mjml.txt; the full ZIP falls back to it and still
+    // hands over the file as main.mjml.
+    const fetchBlob = async (path) => {
+      let res = await fetch(path, { cache: 'no-cache' });
+      if (!res.ok && path.endsWith('.mjml')) res = await fetch(`${path}.txt`, { cache: 'no-cache' });
+      if (!res.ok) throw new Error(`${path}: ${res.status}`);
+      return res.blob();
+    };
+    // Every download link (static ones and the upload list) goes through saveFile.
+    document.addEventListener('click', async (e) => {
+      const link = e.target.closest('a[download]');
+      if (!link || link.dataset.direct) return;
+      e.preventDefault();
+      const name = link.getAttribute('download') || link.getAttribute('href').split('/').pop();
+      try {
+        if (await saveFile(name, await fetchBlob(link.getAttribute('href')))) status(`Saved ${name}.`);
+      } catch (err) {
+        status(`Could not save ${name} (${err.message}).`);
+      }
+    });
+    if (inArtifact) {
+      // Remote images never load in an artifact, so the EN option would only
+      // ever show broken images here.
+      $('images-control').hidden = true;
+    }
+
+    async function zipAndSave(entries, zipName, btn, label) {
+      btn.disabled = true;
+      btn.textContent = 'Preparing…';
+      try {
+        const files = await Promise.all(entries.map(async ([path, name]) => ({
+          name,
+          data: new Uint8Array(await (await fetchBlob(path)).arrayBuffer()),
+        })));
+        if (await saveFile(zipName, makeZip(files))) status(`Saved ${zipName} (${files.length} files).`);
+      } catch (err) {
+        status(`Could not build ${zipName} (${err.message}).`);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = label;
+      }
+    }
+    $('zip').addEventListener('click', () =>
+      zipAndSave(uploads.map((u) => [PATHS.upload + u.name, u.name]), 'glaad-en-upload-files.zip', $('zip'), 'Download upload files (ZIP)'));
+    $('zip-all').addEventListener('click', () => {
+      const root = 'glaad-en-marketing-tools/';
+      const entries = [
+        ...fileLists.local.map((f) => [`dist/local/${f.name}`, `${root}dist/local/${f.name}`]),
+        ...fileLists.en.map((f) => [`dist/en/${f.name}`, `${root}dist/en/${f.name}`]),
+        ...fileLists.uploads.map((f) => [`upload/${f.name}`, `${root}upload/${f.name}`]),
+      ];
+      zipAndSave(entries, 'glaad-en-marketing-tools.zip', $('zip-all'), 'Download everything (ZIP)');
+    });
+
+  </script>
+</body>
+</html>
