@@ -170,7 +170,7 @@
           <mj-image data-display-toggle src="assets/glaad-logo-cyan-transparent.png" alt="GLAAD" href="https://www.glaad.org/" width="160px" align="left" padding="0 10px 0 0" />
         </mj-column>
         <mj-column vertical-align="middle" width="50%">
-          <mj-button data-display-toggle width="auto" href="https://give.glaad.org/page/50945/donate/1?chain" align="right" padding="0" color="#FFFFFF" background-color="#0313C4">DONATE</mj-button>
+          <mj-button data-display-toggle width="auto" href="https://act.glaad.org/sp/page/QZSN" align="right" padding="0" color="#FFFFFF" background-color="#0313C4">DONATE</mj-button>
         </mj-column>
       </mj-group>
     </mj-section>
@@ -240,24 +240,30 @@
          writes the px width onto the link too, so a Width field was dead at
          both viewports (Inert Audit FAIL, 2026-11-16) and equal widths are
          the point of the row.
-         Amount links use EN's documented prefill parameter
-         transaction.donationAmt next to GLAAD's own ?chain, joined with a RAW
-         `&` on purpose: `&amp;` reached the importer's Link URL fields
-         verbatim, where an editor sees it and EN may escape it again. Test the amounts
-         against GLAAD's donation page: EN applies prefills on the first click
-         from an email only, and they must match the page's options. -->
+         Donate links point at GLAAD's donation Smart Page (the /sp/ path,
+         act.glaad.org/sp/page/QZSN, supplied 2026-11-17). Amount links add
+         the Smart Pages `amount` parameter (EN knowledge base, Smart Pages
+         setup, Additional Parameters). Smart Pages also take `frequency`
+         (one-time, monthly, quarterly or annual); these links leave it to
+         the page default (user decision 2026-11-17). Join further
+         parameters with a RAW `&`: `&amp;` reached the importer's Link URL
+         fields verbatim, where an editor sees it and EN may escape it again.
+         The sample amounts match the page's own options ($250, $100, $60
+         default, $35; checked 2026-11-17): ?amount=250 preselects $250, while
+         an amount that is not an option (?amount=50) lands in the page's
+         other-amount box with nothing selected. Keep them matched. -->
     <mj-section css-class="button-block block" background-color="#FFFFFF" padding="0 20px" data-max-gutter="20" data-desktop-only-width>
       <mj-column padding="0 10px">
-        <mj-button data-no-width-toggle width="120px" href="https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=50" align="center" padding="0 0 10px" color="#FFFFFF" background-color="#0313C4">$50</mj-button>
+        <mj-button data-no-width-toggle width="120px" href="https://act.glaad.org/sp/page/QZSN?amount=60" align="center" padding="0 0 10px" color="#FFFFFF" background-color="#0313C4">$60</mj-button>
       </mj-column>
       <mj-column padding="0 10px">
-        <mj-button data-no-width-toggle width="120px" href="https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=100" align="center" padding="0 0 10px" color="#FFFFFF" background-color="#0313C4">$100</mj-button>
+        <mj-button data-no-width-toggle width="120px" href="https://act.glaad.org/sp/page/QZSN?amount=100" align="center" padding="0 0 10px" color="#FFFFFF" background-color="#0313C4">$100</mj-button>
       </mj-column>
       <mj-column padding="0 10px">
-        <mj-button data-no-width-toggle width="120px" href="https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=250" align="center" padding="0 0 10px" color="#FFFFFF" background-color="#0313C4">$250</mj-button>
+        <mj-button data-no-width-toggle width="120px" href="https://act.glaad.org/sp/page/QZSN?amount=250" align="center" padding="0 0 10px" color="#FFFFFF" background-color="#0313C4">$250</mj-button>
       </mj-column>
       <mj-column padding="0 10px">
-        <mj-button data-no-width-toggle width="120px" href="https://give.glaad.org/page/50945/donate/1?chain" align="center" padding="0 0 10px" color="#FFFFFF" background-color="#0313C4">OTHER</mj-button>
+        <mj-button data-no-width-toggle width="120px" href="https://act.glaad.org/sp/page/QZSN" align="center" padding="0 0 10px" color="#FFFFFF" background-color="#0313C4">OTHER</mj-button>
       </mj-column>
     </mj-section>
     <mj-section css-class="spacer-block block" padding="0">

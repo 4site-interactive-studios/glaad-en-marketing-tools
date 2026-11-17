@@ -76,9 +76,10 @@ warning that the EN export is stale, and that warning must not be silenced.
   pairs two `mj-social` rows (`light-only` / `dark-only` +
   `data-style-dark-mode`, the dark one inside `[if !mso]`). The black icons
   carry a 1px white halo for clients that cannot swap (Gmail apps, Outlook
-  desktop). The Dark Audit's "orphan-swap-class" notes on that row are its
-  per-image adjacency heuristic meeting row-level twins, not a defect; the
-  light/dark render count is the real check.
+  desktop). The importer pairs the two rows icon by icon (since
+  2026-11-17), so each icon's white version is its Dark Mode Image URL in
+  Social 1-4: keep both rows in the same order with identical links and alt
+  text, or the white icons come back as extra Social groups.
 - **Match Banner has no `block` class** so the dark repaints skip it and it
   keeps its Navy ground. Any new dark-ground band should do the same.
 - **No `versions.json` / `version-sync`**, no debug overlay, no category

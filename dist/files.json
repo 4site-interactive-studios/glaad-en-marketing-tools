@@ -83,7 +83,7 @@
     },
     {
       "name": "glaad-thumbnail-cta-buttons-3x1-fixed-width.png",
-      "bytes": 6400
+      "bytes": 6724
     },
     {
       "name": "glaad-thumbnail-cta-buttons-3x1.png",
@@ -99,7 +99,7 @@
     },
     {
       "name": "glaad-thumbnail-gift-amount-buttons-4x1.png",
-      "bytes": 7270
+      "bytes": 7315
     },
     {
       "name": "glaad-thumbnail-image-full-width.png",
@@ -205,27 +205,27 @@
     },
     {
       "name": "example-welcome.html",
-      "bytes": 49378
+      "bytes": 49364
     },
     {
       "name": "example-welcome.mjml",
-      "bytes": 14204
+      "bytes": 14190
     },
     {
       "name": "example-year-end-appeal.html",
-      "bytes": 69739
+      "bytes": 70063
     },
     {
       "name": "example-year-end-appeal.mjml",
-      "bytes": 19094
+      "bytes": 19418
     },
     {
       "name": "main.html",
-      "bytes": 133416
+      "bytes": 133547
     },
     {
       "name": "main.mjml",
-      "bytes": 41445
+      "bytes": 41576
     },
     {
       "name": "styles.css",
@@ -235,11 +235,11 @@
   "en": [
     {
       "name": "en-blocks-import.json",
-      "bytes": 482615
+      "bytes": 482364
     },
     {
       "name": "en-template-import.json",
-      "bytes": 5998
+      "bytes": 5999
     },
     {
       "name": "example-news-update.html",
@@ -251,19 +251,19 @@
     },
     {
       "name": "example-welcome.html",
-      "bytes": 50107
+      "bytes": 50093
     },
     {
       "name": "example-welcome.mjml",
-      "bytes": 14933
+      "bytes": 14919
     },
     {
       "name": "example-year-end-appeal.html",
-      "bytes": 70468
+      "bytes": 70792
     },
     {
       "name": "example-year-end-appeal.mjml",
-      "bytes": 19823
+      "bytes": 20147
     },
     {
       "name": "export-manifest.json",
@@ -271,11 +271,11 @@
     },
     {
       "name": "main.html",
-      "bytes": 134712
+      "bytes": 134843
     },
     {
       "name": "main.mjml",
-      "bytes": 42741
+      "bytes": 42872
     },
     {
       "name": "styles.css",

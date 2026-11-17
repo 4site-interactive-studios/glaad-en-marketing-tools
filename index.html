@@ -121,6 +121,18 @@
     figcaption { padding: 10px 12px; font-size: 14px; }
     figcaption strong { display: block; font-size: 15px; }
     figcaption span { color: var(--muted); }
+    /* Color palette: one swatch per declared brand color. */
+    .palette { margin-top: 40px; }
+    .swatches {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 16px; margin: 0; padding: 0; list-style: none;
+    }
+    .swatch { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #FFFFFF; }
+    .swatch .chip { height: 72px; border-bottom: 1px solid var(--line); }
+    .swatch p { margin: 0; padding: 8px 10px; font-size: 14px; line-height: 1.35; }
+    .swatch strong { display: block; }
+    .swatch code { color: var(--muted); font-size: 13px; }
+
     /* A block's editable fields: the count opens a pop-up listing them. */
     .fields-btn {
       font: inherit; font-size: 14px; color: var(--cta); background: none;
@@ -261,6 +273,12 @@
       <p class="note" id="blocks-summary">Loading…</p>
       <div class="grid" id="grid"></div>
     </section>
+
+    <section class="palette" aria-labelledby="palette-h">
+      <h2 id="palette-h">Color palette</h2>
+      <p class="note" id="palette-summary">Loading…</p>
+      <ul class="swatches" id="swatches"></ul>
+    </section>
   </main>
 
   <footer>
@@ -288,6 +306,8 @@
     const PATHS = {
       html: { local: 'dist/local/', en: 'dist/en/' },
       blocks: 'dist/en/en-blocks-import.json',
+      // The palette is read from the template's own en-tools-config.
+      template: 'dist/local/main.mjml',
       manifest: 'dist/en/export-manifest.json',
       files: 'dist/files.json',
       upload: 'upload/',
@@ -349,7 +369,12 @@
         html = html.replace(/@media\s*\(prefers-color-scheme:\s*dark\)/g, state.mode === 'dark' ? '@media all' : '@media not all');
         html = await inlineImages(html, dir);
         const base = `<base href="${new URL(dir, location.href).href}" target="_blank">`;
-        html = html.replace(/<head([^>]*)>/i, `<head$1>${base}`);
+        // Demo view: the email's text cannot be selected or dragged out. Added
+        // to this in-memory copy only; the email files themselves are untouched.
+        const demoLock = document.documentElement.classList.contains('demo')
+          ? '<style>*{-webkit-user-select:none !important;user-select:none !important;-webkit-user-drag:none !important;}</style>'
+          : '';
+        html = html.replace(/<head([^>]*)>/i, `<head$1>${base}${demoLock}`);
         frame.style.colorScheme = state.mode;
         frame.srcdoc = html;
       } catch (err) {
@@ -433,6 +458,33 @@
     $('fields-close').addEventListener('click', () => fieldsDialog.close());
     // A click on the backdrop lands on the dialog itself; its contents fill it.
     fieldsDialog.addEventListener('click', (e) => { if (e.target === fieldsDialog) fieldsDialog.close(); });
+
+    // Color palette, from the brandColors in the template's en-tools-config:
+    // the same list every color dropdown in the template offers.
+    fetch(PATHS.template, { cache: 'no-cache' })
+      .then((res) => { if (!res.ok) throw new Error(`${PATHS.template}: ${res.status}`); return res.text(); })
+      .then((mjml) => {
+        const m = /<!--\s*en-tools-config\s*(\{[\s\S]*?\})\s*-->/.exec(mjml);
+        const colors = Object.entries((m && JSON.parse(m[1]).brandColors) || {});
+        const list = $('swatches');
+        for (const [name, hex] of colors) {
+          const li = document.createElement('li');
+          li.className = 'swatch';
+          const chip = document.createElement('div');
+          chip.className = 'chip';
+          chip.style.backgroundColor = hex;
+          const label = document.createElement('p');
+          const strong = document.createElement('strong');
+          strong.textContent = name;
+          const code = document.createElement('code');
+          code.textContent = hex.toUpperCase();
+          label.append(strong, code);
+          li.append(chip, label);
+          list.append(li);
+        }
+        $('palette-summary').textContent = `${colors.length} brand colors. Every color dropdown in the template and its blocks offers these.`;
+      })
+      .catch((err) => { $('palette-summary').textContent = `Could not load the palette (${err.message}).`; });
 
     // Blocks, from the EN block import itself: name, thumbnail, fields.
     getJson(PATHS.blocks).then((blocks) => {
@@ -708,6 +760,8 @@
           showCard(r.left + e.clientX, r.top + e.clientY);
         });
         doc.addEventListener('pointerdown', hideCard);
+        // Images can still be dragged out of the frame without this.
+        doc.addEventListener('dragstart', (e) => e.preventDefault());
       };
       frame.addEventListener('load', armFrame);
       armFrame();

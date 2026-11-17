@@ -1,8 +1,8 @@
 [
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Utility — Template Styles",
@@ -12,12 +12,12 @@
     "data": {
       "replacements": {}
     },
-    "exportId": 44815
+    "exportId": 908814
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Logo Header",
@@ -370,12 +370,12 @@
         }
       }
     },
-    "exportId": 44816
+    "exportId": 908815
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "CTA Header",
@@ -742,7 +742,7 @@
           "type": "Link",
           "values": {
             "default": {
-              "value": "https://give.glaad.org/page/50945/donate/1?chain"
+              "value": "https://act.glaad.org/sp/page/QZSN"
             }
           },
           "order": 14,
@@ -1048,12 +1048,12 @@
         }
       }
     },
-    "exportId": 44817
+    "exportId": 908816
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Match Banner",
@@ -1482,12 +1482,12 @@
         }
       }
     },
-    "exportId": 44818
+    "exportId": 908817
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Body Copy",
@@ -1680,7 +1680,7 @@
           "type": "RTE",
           "values": {
             "default": {
-              "value": "\n<p>Dear Friend,</p>\n<p>Thank you for adding your voice to our movement. By joining the GLAAD family, you&rsquo;re showing the world that you support love, acceptance, and the freedom to safely live the life you love.</p>\n<p>For nearly 40 years, GLAAD has stood on the forefront of the fight for LGBTQ equality. Our core programs nurture and inspire cultural understanding, prove that inclusive and positive representation matters, and work to shatter stigma and discrimination&mdash;one LGBTQ narrative, image, and character at a time.</p>\n<p>By signing up for email, you will receive regular updates about current events, GLAAD&rsquo;s work, and actions you can take to create change. If you want to do even more to accelerate acceptance now, <a href=\"https://give.glaad.org/page/50945/donate/1?chain\"><strong>please make a gift today</strong></a>. Your donation will be rushed into action to help us create a safe world in which all of us can live as our authentic selves.</p>\n<p>Thank you again. Together we&rsquo;re accelerating 100% acceptance.</p>\n"
+              "value": "\n<p>Dear Friend,</p>\n<p>Thank you for adding your voice to our movement. By joining the GLAAD family, you&rsquo;re showing the world that you support love, acceptance, and the freedom to safely live the life you love.</p>\n<p>For nearly 40 years, GLAAD has stood on the forefront of the fight for LGBTQ equality. Our core programs nurture and inspire cultural understanding, prove that inclusive and positive representation matters, and work to shatter stigma and discrimination&mdash;one LGBTQ narrative, image, and character at a time.</p>\n<p>By signing up for email, you will receive regular updates about current events, GLAAD&rsquo;s work, and actions you can take to create change. If you want to do even more to accelerate acceptance now, <a href=\"https://act.glaad.org/sp/page/QZSN\"><strong>please make a gift today</strong></a>. Your donation will be rushed into action to help us create a safe world in which all of us can live as our authentic selves.</p>\n<p>Thank you again. Together we&rsquo;re accelerating 100% acceptance.</p>\n"
             }
           },
           "order": 4,
@@ -1820,12 +1820,12 @@
         }
       }
     },
-    "exportId": 44819
+    "exportId": 908818
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Gift Amount Buttons 4x1",
@@ -2006,7 +2006,7 @@
           "type": "Text",
           "values": {
             "default": {
-              "value": "$50"
+              "value": "$60"
             }
           },
           "order": 4,
@@ -2018,7 +2018,7 @@
           "type": "Link",
           "values": {
             "default": {
-              "value": "https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=50"
+              "value": "https://act.glaad.org/sp/page/QZSN?amount=60"
             }
           },
           "order": 5,
@@ -2204,7 +2204,7 @@
           "type": "Link",
           "values": {
             "default": {
-              "value": "https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=100"
+              "value": "https://act.glaad.org/sp/page/QZSN?amount=100"
             }
           },
           "order": 10,
@@ -2390,7 +2390,7 @@
           "type": "Link",
           "values": {
             "default": {
-              "value": "https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=250"
+              "value": "https://act.glaad.org/sp/page/QZSN?amount=250"
             }
           },
           "order": 15,
@@ -2576,7 +2576,7 @@
           "type": "Link",
           "values": {
             "default": {
-              "value": "https://give.glaad.org/page/50945/donate/1?chain"
+              "value": "https://act.glaad.org/sp/page/QZSN"
             }
           },
           "order": 20,
@@ -2852,12 +2852,12 @@
         }
       }
     },
-    "exportId": 44820
+    "exportId": 908819
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "CTA Button",
@@ -3024,7 +3024,7 @@
           "type": "Link",
           "values": {
             "default": {
-              "value": "https://give.glaad.org/page/50945/donate/1?chain"
+              "value": "https://act.glaad.org/sp/page/QZSN"
             }
           },
           "order": 4,
@@ -3342,12 +3342,12 @@
         }
       }
     },
-    "exportId": 44821
+    "exportId": 908820
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "CTA Buttons 2x1",
@@ -3514,7 +3514,7 @@
           "type": "Link",
           "values": {
             "default": {
-              "value": "https://give.glaad.org/page/50945/donate/1?chain"
+              "value": "https://act.glaad.org/sp/page/QZSN"
             }
           },
           "order": 4,
@@ -3950,12 +3950,12 @@
         }
       }
     },
-    "exportId": 44822
+    "exportId": 908821
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "CTA Buttons 3x1",
@@ -4122,7 +4122,7 @@
           "type": "Link",
           "values": {
             "default": {
-              "value": "https://give.glaad.org/page/50945/donate/1?chain"
+              "value": "https://act.glaad.org/sp/page/QZSN"
             }
           },
           "order": 4,
@@ -4718,12 +4718,12 @@
         }
       }
     },
-    "exportId": 44823
+    "exportId": 908822
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "CTA Buttons 2x1 (fixed width)",
@@ -4890,7 +4890,7 @@
           "type": "Link",
           "values": {
             "default": {
-              "value": "https://give.glaad.org/page/50945/donate/1?chain"
+              "value": "https://act.glaad.org/sp/page/QZSN"
             }
           },
           "order": 4,
@@ -5300,12 +5300,12 @@
         }
       }
     },
-    "exportId": 44824
+    "exportId": 908823
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "CTA Buttons 3x1 (fixed width)",
@@ -5460,7 +5460,7 @@
           "type": "Text",
           "values": {
             "default": {
-              "value": "$50"
+              "value": "$60"
             }
           },
           "order": 3,
@@ -5472,7 +5472,7 @@
           "type": "Link",
           "values": {
             "default": {
-              "value": "https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=50"
+              "value": "https://act.glaad.org/sp/page/QZSN?amount=60"
             }
           },
           "order": 4,
@@ -5632,7 +5632,7 @@
           "type": "Link",
           "values": {
             "default": {
-              "value": "https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=100"
+              "value": "https://act.glaad.org/sp/page/QZSN?amount=100"
             }
           },
           "order": 8,
@@ -5792,7 +5792,7 @@
           "type": "Link",
           "values": {
             "default": {
-              "value": "https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=250"
+              "value": "https://act.glaad.org/sp/page/QZSN?amount=250"
             }
           },
           "order": 12,
@@ -6042,12 +6042,12 @@
         }
       }
     },
-    "exportId": 44825
+    "exportId": 908824
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "CTA Buttons 2x1 (two-line)",
@@ -6226,7 +6226,7 @@
           "type": "Link",
           "values": {
             "default": {
-              "value": "https://give.glaad.org/page/50945/donate/1?chain"
+              "value": "https://act.glaad.org/sp/page/QZSN"
             }
           },
           "order": 5,
@@ -6648,12 +6648,12 @@
         }
       }
     },
-    "exportId": 44826
+    "exportId": 908825
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Signature (no photo)",
@@ -6986,12 +6986,12 @@
         }
       }
     },
-    "exportId": 44827
+    "exportId": 908826
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Signature (photo)",
@@ -7824,12 +7824,12 @@
         }
       }
     },
-    "exportId": 44828
+    "exportId": 908827
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Image (full width)",
@@ -8090,12 +8090,12 @@
         }
       }
     },
-    "exportId": 44829
+    "exportId": 908828
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Image (indented)",
@@ -8422,18 +8422,18 @@
         }
       }
     },
-    "exportId": 44830
+    "exportId": 908829
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Social Links",
     "type": "CUSTOM",
     "thumbnail": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-thumbnail-social-links.png",
-    "content": "<span class=\"marketing-tools-block-band\" data-band=\"social-links\" aria-hidden=\"true\" style=\"display: none;\"></span>\n<style type=\"text/css\">\n  .marketing-tools-block-band[data-band=\"social-links\"]:before{ content: \"Social Links\"; }\n</style>\n<!-- START: Social Links -->\n<!--[if mso | IE]><table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"social-block-outlook block-outlook\" role=\"presentation\" style=\"width:600px;\" width=\"600\" bgcolor=\"{replacement~block_background_color}\" ><tr><td style=\"line-height:0px;font-size:0px;mso-line-height-rule:exactly;\"><![endif]-->\n<div class=\"social-block block\" style=\"background:{replacement~block_background_color};background-color:{replacement~block_background_color};margin:0px auto;max-width:600px;\">\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background:{replacement~block_background_color};background-color:{replacement~block_background_color};width:100%;\">\n<tbody>\n<tr>\n<td style=\"direction:ltr;font-size:0px;padding:{replacement~block_padding_top}px {replacement~block_width}px {replacement~block_padding_bottom}px {replacement~block_width}px;text-align:{replacement~social_alignment};\">\n<!--[if mso | IE]><table role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td class=\"\" style=\"vertical-align:top;width:540px;\" ><![endif]-->\n<div class=\"mj-column-per-100 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\">\n<tbody>\n{replacement~heading_display}\n<tr>\n<td align=\"{replacement~social_alignment}\" class=\"light-only\" style=\"font-size:0px;padding:0;word-break:break-word;\">\n<!--[if mso | IE]><table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" ><tr><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_1_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_1_alt_text}\" src=\"{replacement~social_1_image_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_2_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_2_alt_text}\" src=\"{replacement~social_2_image_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_3_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_3_alt_text}\" src=\"{replacement~social_3_image_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_4_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_4_alt_text}\" src=\"{replacement~social_4_image_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td></tr></table><![endif]-->\n</td>\n</tr>\n<!--[if !mso]><!-->\n<tr>\n<td align=\"{replacement~social_alignment}\" class=\"dark-only\" style=\"font-size:0px;padding:0;word-break:break-word;\"><!--[if mso | IE]><table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" ><tr><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_1_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_1_alt_text}\" src=\"{replacement~social_5_image_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_2_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_2_alt_text}\" src=\"{replacement~social_6_image_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_3_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_3_alt_text}\" src=\"{replacement~social_7_image_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_4_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_4_alt_text}\" src=\"{replacement~social_8_image_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td></tr></table><![endif]-->\n</td>\n</tr>\n<!--<![endif]-->\n</tbody>\n</table>\n</div>\n<!--[if mso | IE]></td></tr></table><![endif]-->\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n{replacement~spacer_gap}\n<!-- END: Social Links -->",
+    "content": "<span class=\"marketing-tools-block-band\" data-band=\"social-links\" aria-hidden=\"true\" style=\"display: none;\"></span>\n<style type=\"text/css\">\n  .marketing-tools-block-band[data-band=\"social-links\"]:before{ content: \"Social Links\"; }\n</style>\n<!-- START: Social Links -->\n<!--[if mso | IE]><table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"social-block-outlook block-outlook\" role=\"presentation\" style=\"width:600px;\" width=\"600\" bgcolor=\"{replacement~block_background_color}\" ><tr><td style=\"line-height:0px;font-size:0px;mso-line-height-rule:exactly;\"><![endif]-->\n<div class=\"social-block block\" style=\"background:{replacement~block_background_color};background-color:{replacement~block_background_color};margin:0px auto;max-width:600px;\">\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background:{replacement~block_background_color};background-color:{replacement~block_background_color};width:100%;\">\n<tbody>\n<tr>\n<td style=\"direction:ltr;font-size:0px;padding:{replacement~block_padding_top}px {replacement~block_width}px {replacement~block_padding_bottom}px {replacement~block_width}px;text-align:{replacement~social_alignment};\">\n<!--[if mso | IE]><table role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td class=\"\" style=\"vertical-align:top;width:540px;\" ><![endif]-->\n<div class=\"mj-column-per-100 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\">\n<tbody>\n{replacement~heading_display}\n<tr>\n<td align=\"{replacement~social_alignment}\" class=\"light-only\" style=\"font-size:0px;padding:0;word-break:break-word;\">\n<!--[if mso | IE]><table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" ><tr><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_1_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_1_alt_text}\" src=\"{replacement~social_1_image_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_2_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_2_alt_text}\" src=\"{replacement~social_2_image_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_3_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_3_alt_text}\" src=\"{replacement~social_3_image_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_4_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_4_alt_text}\" src=\"{replacement~social_4_image_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td></tr></table><![endif]-->\n</td>\n</tr>\n<!--[if !mso]><!-->\n<tr>\n<td align=\"{replacement~social_alignment}\" class=\"dark-only\" style=\"font-size:0px;padding:0;word-break:break-word;\"><!--[if mso | IE]><table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" ><tr><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_1_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_1_alt_text}\" src=\"{replacement~social_1_dark_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_2_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_2_alt_text}\" src=\"{replacement~social_2_dark_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_3_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_3_alt_text}\" src=\"{replacement~social_3_dark_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td><td><![endif]-->\n<table align=\"{replacement~social_alignment}\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"float:none;display:inline-table;\">\n<tbody>\n<tr>\n<td style=\"padding:3px;vertical-align:middle;\">\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:3px;width:36px;\">\n<tbody>\n<tr>\n<td style=\"padding:0;font-size:0;height:36px;vertical-align:middle;width:36px;\">\n<a href=\"{replacement~social_4_link_url}\" target=\"_blank\">\n<img alt=\"{replacement~social_4_alt_text}\" src=\"{replacement~social_4_dark_url}\" style=\"border:0;border-radius:3px;display:block;\" width=\"36\" />\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>\n<!--[if mso | IE]></td></tr></table><![endif]-->\n</td>\n</tr>\n<!--<![endif]-->\n</tbody>\n</table>\n</div>\n<!--[if mso | IE]></td></tr></table><![endif]-->\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n{replacement~spacer_gap}\n<!-- END: Social Links -->",
     "data": {
       "replacements": {
         "block_background_color": {
@@ -8778,6 +8778,18 @@
           "name": "social_1_image_url",
           "section": "Social 1"
         },
+        "social_1_dark_url": {
+          "type": "ImageURL",
+          "values": {
+            "default": {
+              "value": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-facebook-white.png"
+            }
+          },
+          "order": 11,
+          "label": "Dark Mode Image URL",
+          "name": "social_1_dark_url",
+          "section": "Social 1"
+        },
         "social_1_link_url": {
           "type": "Link",
           "values": {
@@ -8785,7 +8797,7 @@
               "value": "https://www.facebook.com/GLAAD/"
             }
           },
-          "order": 11,
+          "order": 12,
           "label": "Link URL",
           "name": "social_1_link_url",
           "section": "Social 1"
@@ -8797,7 +8809,7 @@
               "value": "Facebook"
             }
           },
-          "order": 12,
+          "order": 13,
           "label": "Alt Text (Describe the Image)",
           "name": "social_1_alt_text",
           "section": "Social 1"
@@ -8809,9 +8821,21 @@
               "value": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-twitter-black.png"
             }
           },
-          "order": 13,
+          "order": 14,
           "label": "Image URL",
           "name": "social_2_image_url",
+          "section": "Social 2"
+        },
+        "social_2_dark_url": {
+          "type": "ImageURL",
+          "values": {
+            "default": {
+              "value": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-twitter-white.png"
+            }
+          },
+          "order": 15,
+          "label": "Dark Mode Image URL",
+          "name": "social_2_dark_url",
           "section": "Social 2"
         },
         "social_2_link_url": {
@@ -8821,7 +8845,7 @@
               "value": "https://twitter.com/glaad"
             }
           },
-          "order": 14,
+          "order": 16,
           "label": "Link URL",
           "name": "social_2_link_url",
           "section": "Social 2"
@@ -8833,7 +8857,7 @@
               "value": "Twitter"
             }
           },
-          "order": 15,
+          "order": 17,
           "label": "Alt Text (Describe the Image)",
           "name": "social_2_alt_text",
           "section": "Social 2"
@@ -8845,9 +8869,21 @@
               "value": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-instagram-black.png"
             }
           },
-          "order": 16,
+          "order": 18,
           "label": "Image URL",
           "name": "social_3_image_url",
+          "section": "Social 3"
+        },
+        "social_3_dark_url": {
+          "type": "ImageURL",
+          "values": {
+            "default": {
+              "value": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-instagram-white.png"
+            }
+          },
+          "order": 19,
+          "label": "Dark Mode Image URL",
+          "name": "social_3_dark_url",
           "section": "Social 3"
         },
         "social_3_link_url": {
@@ -8857,7 +8893,7 @@
               "value": "https://www.instagram.com/glaad/"
             }
           },
-          "order": 17,
+          "order": 20,
           "label": "Link URL",
           "name": "social_3_link_url",
           "section": "Social 3"
@@ -8869,7 +8905,7 @@
               "value": "Instagram"
             }
           },
-          "order": 18,
+          "order": 21,
           "label": "Alt Text (Describe the Image)",
           "name": "social_3_alt_text",
           "section": "Social 3"
@@ -8881,9 +8917,21 @@
               "value": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-youtube-black.png"
             }
           },
-          "order": 19,
+          "order": 22,
           "label": "Image URL",
           "name": "social_4_image_url",
+          "section": "Social 4"
+        },
+        "social_4_dark_url": {
+          "type": "ImageURL",
+          "values": {
+            "default": {
+              "value": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-youtube-white.png"
+            }
+          },
+          "order": 23,
+          "label": "Dark Mode Image URL",
+          "name": "social_4_dark_url",
           "section": "Social 4"
         },
         "social_4_link_url": {
@@ -8893,7 +8941,7 @@
               "value": "https://www.youtube.com/channel/UCZmLgxP2N3Vj0XaQtohLT-A"
             }
           },
-          "order": 20,
+          "order": 24,
           "label": "Link URL",
           "name": "social_4_link_url",
           "section": "Social 4"
@@ -8905,58 +8953,10 @@
               "value": "YouTube"
             }
           },
-          "order": 21,
+          "order": 25,
           "label": "Alt Text (Describe the Image)",
           "name": "social_4_alt_text",
           "section": "Social 4"
-        },
-        "social_5_image_url": {
-          "type": "ImageURL",
-          "values": {
-            "default": {
-              "value": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-facebook-white.png"
-            }
-          },
-          "order": 22,
-          "label": "Image URL",
-          "name": "social_5_image_url",
-          "section": "Social 5"
-        },
-        "social_6_image_url": {
-          "type": "ImageURL",
-          "values": {
-            "default": {
-              "value": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-twitter-white.png"
-            }
-          },
-          "order": 23,
-          "label": "Image URL",
-          "name": "social_6_image_url",
-          "section": "Social 6"
-        },
-        "social_7_image_url": {
-          "type": "ImageURL",
-          "values": {
-            "default": {
-              "value": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-instagram-white.png"
-            }
-          },
-          "order": 24,
-          "label": "Image URL",
-          "name": "social_7_image_url",
-          "section": "Social 7"
-        },
-        "social_8_image_url": {
-          "type": "ImageURL",
-          "values": {
-            "default": {
-              "value": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109/glaad-icon-youtube-white.png"
-            }
-          },
-          "order": 25,
-          "label": "Image URL",
-          "name": "social_8_image_url",
-          "section": "Social 8"
         },
         "spacer_background_color": {
           "type": "Select",
@@ -9064,12 +9064,12 @@
         }
       }
     },
-    "exportId": 44831
+    "exportId": 908830
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Footer",
@@ -9432,12 +9432,12 @@
         }
       }
     },
-    "exportId": 44832
+    "exportId": 908831
   },
   {
     "clientId": 10109,
-    "createdOn": 1794869034815,
-    "modifiedOn": 1794869034815,
+    "createdOn": 1794931898814,
+    "modifiedOn": 1794931898814,
     "ownedBy": 0,
     "folderId": 0,
     "name": "Utility — RAW HTML",
@@ -9460,6 +9460,6 @@
         }
       }
     },
-    "exportId": 44833
+    "exportId": 908832
   }
 ]

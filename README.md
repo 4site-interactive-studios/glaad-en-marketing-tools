@@ -72,8 +72,10 @@ for the full page with the setup steps, export details and every download:
   title is `?downloads` only too.
 
 In the demo view a right-click, on the page or inside the email preview,
-shows a short "draft by 4Site Studios" note instead of the browser menu. It
-is a deterrent only: View Source and the browser's developer tools still
+shows a short "draft by 4Site Studios" note instead of the browser menu, and
+the email preview's text cannot be selected or dragged out (a style added to
+the preview's in-memory copy only; the email files are untouched). Both are
+deterrents only: View Source and the browser's developer tools still
 work, and every file is public at its own URL.
 
 The page reads `dist/files.json`, `dist/en/en-blocks-import.json` and
@@ -161,18 +163,18 @@ npm run export-en                 # EN import JSON + thumbnails, via the importe
 | CTA Header | Logo left (160px), DONATE button right; stays side by side on phones | show/hide logo and button, logo image/link/alt/width, button label/link/colors/width, column order, gap below |
 | Match Banner | Navy band, white heading and line, for match or deadline messages | content, text color, background, padding, gap below |
 | Body Copy | Rich-text copy at the 30px baseline | content, link color, side padding, gap below |
-| Gift Amount Buttons 4x1 | $50 / $100 / $250 / OTHER, 120px each; stack full column on phones | each button's label, link, colors and width; side padding up to 20px |
+| Gift Amount Buttons 4x1 | $60 / $100 / $250 / OTHER, 120px each; stack full column on phones | each button's label, link, colors and width; side padding up to 20px |
 | CTA Button | Centered DONATE NOW button | label, link, colors, width, alignment, gap below |
 | CTA Buttons 2x1 | Two buttons sized to their labels, centered; stack on phones | each button's label, link and colors, row alignment (desktop), gap below |
 | CTA Buttons 3x1 | Three buttons sized to their labels (keep labels short); stack on phones | each button's label, link and colors, row alignment (desktop), gap below |
 | CTA Buttons 2x1 (fixed width) | Two equal 260px buttons filling the row; stack on phones | each button's label, link and colors, gap below |
-| CTA Buttons 3x1 (fixed width) | Three equal 166px buttons ($50 / $100 / $250 with amount prefills); stack on phones | each button's label, link and colors, gap below |
+| CTA Buttons 3x1 (fixed width) | Three equal 166px buttons ($60 / $100 / $250 with amount prefills); stack on phones | each button's label, link and colors, gap below |
 | CTA Buttons 2x1 (two-line) | Two 260px buttons with a bold first line and a regular second line | each button's two label lines, link and colors, gap below |
 | Signature (no photo) | "With gratitude," plus name and title | content, side padding, gap below |
 | Signature (photo) | "With gratitude," then a round photo beside a signature image, name and title; stays side by side on phones | photo and signature images with their dark mode versions and alt text, photo shape (circle or square), name and title, padding, gap below |
 | Image (full width) | 600px edge-to-edge image | image, link, alt text, gap below |
 | Image (indented) | 540px image aligned to the copy | image, link, alt text, gap below |
-| Social Links | "Follow Us!" heading plus four icons (black with a thin white halo; solid white in dark mode) | heading (show/hide), each icon's link and alt text (shared by both icon sets), light icon images (Social 1-4), dark icon images (Social 5-8), gap below |
+| Social Links | "Follow Us!" heading plus four icons (black with a thin white halo; solid white in dark mode) | heading (show/hide), each icon's image, dark mode image, link and alt text (Social 1-4), gap below |
 | Footer | Near-black band: copyright, address, unsubscribe | content, text color, link color, padding |
 
 The importer also adds its standard utility blocks (Template Styles and
@@ -222,9 +224,11 @@ Declared in the `en-tools-config` comment at the top of `src/main.mjml`.
 
 Links are Blue `#105BAB` (6.9:1 on white); footer and banner links are white. Buttons
 are CTA Blue with white text, 10px 30px padding and 3px corners, matching the
-live email's `.msCta` rule. Donate links keep GLAAD's `?chain` parameter as
-their live email uses it; gift amount links add EN's documented prefill
-parameter, e.g. `?chain&transaction.donationAmt=50`.
+live email's `.msCta` rule. Donate links point at GLAAD's donation Smart
+Page, `https://act.glaad.org/sp/page/QZSN`; gift amount links add the Smart
+Pages `amount` parameter, e.g. `?amount=60`. Smart Pages also take
+`frequency` (`one-time`, `monthly`, `quarterly` or `annual`); the template
+leaves it to the page's default.
 
 ## Dark mode
 
@@ -262,10 +266,9 @@ app pre-selects TPL's account values on load, and they must be replaced.
 - **Owner ID**: regenerate the import files with GLAAD's real owner (and
   folder) ID, see "Keeping everything in sync".
 - **Gift amounts** (Gift Amount Buttons 4x1 and CTA Buttons 3x1 (fixed
-  width)): match the buttons to the amounts on GLAAD's donation page,
-  and click each through from a real test email. EN only applies a prefill on
-  the first click from an email, and we could not check the live page from
-  here.
+  width)): match the buttons to the amounts on GLAAD's donation Smart Page,
+  and click each through from a real test email to confirm the amount comes
+  up selected.
 - **Signature**: confirm the name and title (Sarah Kate Ellis, President &
   CEO) with GLAAD before the first send. Signature (photo) ships with
   PLACEHOLDER art: replace `glaad-signature-photo.png` (a square headshot,

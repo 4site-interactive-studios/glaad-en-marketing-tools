@@ -1,13 +1,13 @@
 {
   "note": "Written by npm run export-en. check-sync compares sourceHash with src/ to catch stale exports.",
-  "exportedAt": "2026-11-16T22:43:55.196Z",
-  "sourceHash": "add451a0b78c5300",
+  "exportedAt": "2026-11-17T16:11:39.204Z",
+  "sourceHash": "12bca7f117b5ed07",
   "assetRoot": "https://acb0a5d73b67fccd4bbe-c2d8138f0ea10a18dd4c43ec3aa4240a.ssl.cf5.rackcdn.com/10109",
   "clientId": 10109,
   "ownedBy": 0,
   "folderId": 0,
   "templateName": "GLAAD Email Template",
-  "importerCommit": "96da987",
+  "importerCommit": "9af23ef",
   "blocks": [
     "Logo Header",
     "CTA Header",

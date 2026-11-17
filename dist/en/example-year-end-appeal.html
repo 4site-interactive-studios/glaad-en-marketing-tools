@@ -540,7 +540,7 @@
                                 <tbody>
                                   <tr>
                                     <td align="center" bgcolor="#0313C4" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 30px;background:#0313C4;" valign="middle">
-                                      <a href="https://give.glaad.org/page/50945/donate/1?chain" style="display:inline-block;background:#0313C4;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:700;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 30px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> DONATE </a>
+                                      <a href="https://act.glaad.org/sp/page/QZSN" style="display:inline-block;background:#0313C4;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:700;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 30px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> DONATE </a>
                                     </td>
                                   </tr>
                                 </tbody>
@@ -714,12 +714,18 @@
          writes the px width onto the link too, so a Width field was dead at
          both viewports (Inert Audit FAIL, 2026-11-16) and equal widths are
          the point of the row.
-         Amount links use EN's documented prefill parameter
-         transaction.donationAmt next to GLAAD's own ?chain, joined with a RAW
-         `&` on purpose: `&amp;` reached the importer's Link URL fields
-         verbatim, where an editor sees it and EN may escape it again. Test the amounts
-         against GLAAD's donation page: EN applies prefills on the first click
-         from an email only, and they must match the page's options. -->
+         Donate links point at GLAAD's donation Smart Page (the /sp/ path,
+         act.glaad.org/sp/page/QZSN, supplied 2026-11-17). Amount links add
+         the Smart Pages `amount` parameter (EN knowledge base, Smart Pages
+         setup, Additional Parameters). Smart Pages also take `frequency`
+         (one-time, monthly, quarterly or annual); these links leave it to
+         the page default (user decision 2026-11-17). Join further
+         parameters with a RAW `&`: `&amp;` reached the importer's Link URL
+         fields verbatim, where an editor sees it and EN may escape it again.
+         The sample amounts match the page's own options ($250, $100, $60
+         default, $35; checked 2026-11-17): ?amount=250 preselects $250, while
+         an amount that is not an option (?amount=50) lands in the page's
+         other-amount box with nothing selected. Keep them matched. -->
         <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="button-block-outlook block-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
         <div class="button-block block" style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">
           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;">
@@ -740,7 +746,7 @@
                                       <tbody>
                                         <tr>
                                           <td align="center" bgcolor="#0313C4" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 30px;background:#0313C4;" valign="middle">
-                                            <a href="https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=50" style="display:inline-block;width:60px;background:#0313C4;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:700;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 30px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> $50 </a>
+                                            <a href="https://act.glaad.org/sp/page/QZSN?amount=60" style="display:inline-block;width:60px;background:#0313C4;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:700;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 30px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> $60 </a>
                                           </td>
                                         </tr>
                                       </tbody>
@@ -768,7 +774,7 @@
                                       <tbody>
                                         <tr>
                                           <td align="center" bgcolor="#0313C4" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 30px;background:#0313C4;" valign="middle">
-                                            <a href="https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=100" style="display:inline-block;width:60px;background:#0313C4;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:700;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 30px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> $100 </a>
+                                            <a href="https://act.glaad.org/sp/page/QZSN?amount=100" style="display:inline-block;width:60px;background:#0313C4;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:700;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 30px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> $100 </a>
                                           </td>
                                         </tr>
                                       </tbody>
@@ -796,7 +802,7 @@
                                       <tbody>
                                         <tr>
                                           <td align="center" bgcolor="#0313C4" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 30px;background:#0313C4;" valign="middle">
-                                            <a href="https://give.glaad.org/page/50945/donate/1?chain&transaction.donationAmt=250" style="display:inline-block;width:60px;background:#0313C4;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:700;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 30px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> $250 </a>
+                                            <a href="https://act.glaad.org/sp/page/QZSN?amount=250" style="display:inline-block;width:60px;background:#0313C4;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:700;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 30px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> $250 </a>
                                           </td>
                                         </tr>
                                       </tbody>
@@ -824,7 +830,7 @@
                                       <tbody>
                                         <tr>
                                           <td align="center" bgcolor="#0313C4" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 30px;background:#0313C4;" valign="middle">
-                                            <a href="https://give.glaad.org/page/50945/donate/1?chain" style="display:inline-block;width:60px;background:#0313C4;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:700;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 30px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> OTHER </a>
+                                            <a href="https://act.glaad.org/sp/page/QZSN" style="display:inline-block;width:60px;background:#0313C4;color:#FFFFFF;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:700;line-height:20px;margin:0;text-decoration:none;text-transform:none;padding:10px 30px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> OTHER </a>
                                           </td>
                                         </tr>
                                       </tbody>

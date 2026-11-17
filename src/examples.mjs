@@ -67,7 +67,7 @@ export const EXAMPLES = [
         block: 'CTA Button',
         replace: [
           ['>DONATE NOW<', '>READ THE UPDATE<'],
-          ['href="https://give.glaad.org/page/50945/donate/1?chain"', 'href="https://glaad.org/"'],
+          ['href="https://act.glaad.org/sp/page/QZSN"', 'href="https://glaad.org/"'],
         ],
       },
       'Image (indented)',
